@@ -1,0 +1,45 @@
+{
+    "name": "OdooSnippets",
+    "displayName": "Odoo Snippets",
+    "description": "Snippets for Odoo developer (Do Less, Get More).",
+    "version": "0.0.1",
+    "icon": "images/icon.png",
+    "publisher": "jigar-patel",
+    "engines": {
+        "vscode": "^1.34.0"
+    },
+    "galleryBanner": {
+        "color": "#875A7B",
+        "theme": "dark"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "odoo", "snippets", "python", "xml", "javascript"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python_snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js_snippets.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml_snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jat-odoo/VscOdooSnippets"
+    },
+    "bugs": {
+        "url": "https://github.com/jat-odoo/VscOdooSnippets/issues"
+    }
+}

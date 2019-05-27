@@ -1,0 +1,94 @@
+{
+    "odoo_widget": {
+        "prefix": "oowidget",
+        "body": [
+            "var ${1:MyWidget} = Widget.extend({",
+            "\ttemplate: 'MyQWebTemplate',",
+            "\tevents: {",
+            "\t\t",
+            "\t},",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\tinit: function (parent) {",
+            "\t\tthis._super(this, arguments);",
+            "\t},",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\twillStart: function () {",
+            "\t\treturn this._super(this, arguments);",
+            "\t},",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\tstart: function () {",
+            "\t\treturn this._super(this, arguments);",
+            "\t},",
+            "});"
+        ],
+        "description": "Add widget"
+    },
+    "odoo_dialog": {
+        "prefix": "oodialog",
+        "body": [
+            "var MyDialog = Dialog.extend({",
+            "\ttemplate: '${1:My.Dialog}',",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\tinit: function (parent) {",
+            "\t\tthis._super(parent, {",
+            "\t\t\ttitle: _t(\"${2:title}\"),",
+            "\t\t\tsize: '${3|large,medium,small|}',",
+            "\t\t\tbuttons: [{",
+            "\t\t\t\ttext: _t(\"Save\"),",
+            "\t\t\t\tclose: true,",
+            "\t\t\t\tclasses: 'btn-primary',",
+            "\t\t\t\tclick: function () {",
+            "\t\t\t\t\t${0}",
+            "\t\t\t\t}",
+            "\t\t\t}, {",
+            "\t\t\t\ttext: _t(\"Discard\"),",
+            "\t\t\t\tclose: true,",
+            "\t\t\t}],",
+            "\t\t});",
+            "\t},",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\twillStart: function () {",
+            "\t\treturn this._super(this, arguments);",
+            "\t},",
+            "\t/**",
+            "\t * @override",
+            "\t */",
+            "\tstart: function () {",
+            "\t\treturn this._super(this, arguments);",
+            "\t},",
+            "});"
+        ],
+        "description": "Add dialog widget"
+    },
+    "odoo_rpc": {
+        "prefix": "oorpc",
+        "body": [
+            "return this._rpc({",
+            "\tmodel: '${1:model_name}',",
+            "\tmethod: '${2:method_name}',",
+            "\targs: [${3}]",
+            "\tcontext: {${4}}",
+            "}).then(function (result) {",
+            "\t${0}",
+            "});"
+        ],
+        "description": "Add rpc call"
+    },
+    "odoo_super": {
+        "prefix": "oosuper",
+        "body": [
+            "this._super.apply(this, arguments);"
+        ],
+        "description": "Add super statement"
+    }
+}

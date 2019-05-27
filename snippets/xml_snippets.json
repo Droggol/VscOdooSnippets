@@ -1,0 +1,342 @@
+{
+    "odoo_namespace": {
+        "prefix": "oonamespace",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+            "<odoo>",
+            "",
+            "\t${0}",
+            "",
+            "</odoo>"
+        ],
+        "description": "Add Odoo namespace"
+    },
+    "odoo_view_form": {
+        "prefix": "ooform",
+        "body": [
+            "<record id=\"${1:model_name}_view_form\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.form</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<form string=\"${3}\">",
+            "\t\t\t<sheet>",
+            "\t\t\t\t<group>",
+            "\t\t\t\t\t${0}",
+            "\t\t\t\t</group>",
+            "\t\t\t</sheet>",
+            "\t\t</form>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add form view"
+    },
+    "odoo_view_list": {
+        "prefix": "oolist",
+        "body": [
+            "<record id=\"${1:model_name}_view_tree\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.tree</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<tree string=\"${3}\">",
+            "\t\t\t${0}",
+            "\t\t</tree>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add list view"
+    },
+    "odoo_view_kanban": {
+        "prefix": "ookanban",
+        "body": [
+            "<record id=\"${1:model_name}_view_kanban\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.kanban</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<kanban>",
+            "\t\t\t<templates>",
+            "\t\t\t\t<t t-name=\"kanban-box\">",
+            "\t\t\t\t\t${0}",
+            "\t\t\t\t</t>",
+            "\t\t\t</templates>",
+            "\t\t</kanban>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add kanban view"
+    },
+    "odoo_view_search": {
+        "prefix": "oosearch",
+        "body": [
+            "<record id=\"${1:model_name}_view_search\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.search</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<search string=\"${3}\">",
+            "\t\t\t${0}",
+            "\t\t</search>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add search view"
+    },
+    "odoo_view_calendar": {
+        "prefix": "oocalendar",
+        "body": [
+            "<record id=\"${1:model_name}_view_calendar\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.calendar</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<calendar string=\"${3}\" date_start=\"${4:date_start_field}\" color=\"${5:color_field}\">",
+            "\t\t\t${0}",
+            "\t\t</calendar>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add calendar view"
+    },
+    "odoo_view_cohort": {
+        "prefix": "oocohort",
+        "body": [
+            "<record id=\"${1:model_name}_view_cohort\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.cohort</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<cohort string=\"${3}\" date_start=\"${4:date_start_field}\" date_stop=\"${5:date_stop_field}\">",
+            "\t\t</cohort>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add cohort view"
+    },
+    "odoo_view_gantt": {
+        "prefix": "oogantt",
+        "body": [
+            "<record id=\"${1:model_name}_view_gantt\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.gantt</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<gantt string=\"${3}\" date_start=\"${4:date_start_field}\" date_stop=\"${5:date_stop_field}\">",
+            "\t\t</gantt>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add gantt view"
+    },
+    "odoo_view_graph": {
+        "prefix": "oograph",
+        "body": [
+            "<record id=\"${1:model_name}_view_graph\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.graph</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<graph string=\"${3}\" type=\"${4|bar,line,pie|}\">",
+            "\t\t\t${0}",
+            "\t\t</graph>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add graph view"
+    },
+    "odoo_view_pivot": {
+        "prefix": "oopivot",
+        "body": [
+            "<record id=\"${1:model_name}_view_pivot\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.pivot</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<pivot string=\"${3}\" disable_linking=\"${4|true,false|}\">",
+            "\t\t\t${0}",
+            "\t\t</pivot>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add pivot view"
+    },
+    "odoo_view_activity": {
+        "prefix": "ooactivity",
+        "body": [
+            "<record id=\"${1:model_name}_view_activity\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.activity</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<activity string=\"${3}\">",
+            "\t\t\t<templates>",
+            "\t\t\t\t<div t-name=\"activity-box\">",
+            "\t\t\t\t\t${0}",
+            "\t\t\t\t</div>",
+            "\t\t\t</templates>",
+            "\t\t</activity>",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add activity view"
+    },
+    "odoo_view_qweb": {
+        "prefix": "ooqweb",
+        "body": [
+            "<record id=\"${1:model_name}_view_qweb\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2:model.name}.view.qweb</field>",
+            "\t<field name=\"model\">${2:model.name}</field>",
+            "\t<field name=\"type\">qweb</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t${0}",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add qweb view"
+    },
+    "odoo_xpath": {
+        "prefix": "ooxpath",
+        "body": [
+            "<xpath expr=\"${1}\" position=\"${2|inside,after,before,replace,move|}\">",
+            "\t$0",
+            "</xpath>"
+        ],
+        "description": "Add xpath"
+    },
+    "odoo_xpath_attributes": {
+        "prefix": "ooxpath_attr",
+        "body": [
+            "<xpath expr=\"${1}\" position=\"attributes\">",
+            "\t<attribute name=\"${2:attribute}\">${3:attribute_value}</attribute>",
+            "</xpath>"
+        ],
+        "description": "Add xpath to attributes"
+    },
+    "odoo_action": {
+        "prefix": "ooaction",
+        "body": [
+            "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
+            "\t<field name=\"name\">${2:Action Name}</field>",
+            "\t<field name=\"res_model\">${3:model.name}</field>",
+            "\t<field name=\"view_type\">${4:form}</field>",
+            "\t<field name=\"view_mode\">${5:tree}</field>",
+            "\t<field name=\"domain\">[${6}]</field>",
+            "\t<field name=\"context\">{${7}}</field>",
+            "\t<field name=\"help\" type=\"html\">",
+            "\t\t${0}",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add action"
+    },
+    "odoo_server_action": {
+        "prefix": "ooserver_action",
+        "body": [
+            "<record id=\"${1:model_name}_action_server\" model=\"ir.actions.server\">",
+            "\t<field name=\"name\">${2:Action Name}</field>",
+            "\t<field name=\"model_id\" ref=\"model_${1:model_name}\"/>",
+            "\t<field name=\"binding_model_id\" ref=\"model_${1:model_name}\"/>",
+            "\t<field name=\"state\">code</field>",
+            "\t<field name=\"code\">${0}</field>",
+            "</record>"
+        ],
+        "description": "Add server action"
+    },
+    "odoo_cron": {
+        "prefix": "oocron",
+        "body": [
+            "<record id=\"${1:model_name}_cron\" model=\"ir.cron\">",
+            "\t<field name=\"name\">${2:Cron Name}</field>",
+            "\t<field name=\"model_id\" ref=\"model_${1:model_name}\"/>",
+            "\t<field name=\"interval_number\">${4:1}</field>",
+            "\t<field name=\"interval_type\">${5|minutes,hours,days,weeks,months|}</field>",
+            "\t<field name=\"numbercall\">${6:-1}</field>",
+            "\t<field name=\"state\">code</field>",
+            "\t<field name=\"code\">${0}</field>",
+            "</record>"
+        ],
+        "description": "Add cron job"
+    },
+    "odoo_record": {
+        "prefix": "oorecord",
+        "body": [
+            "<record id=\"${1:record_name}\" model=\"${2:model_name}\">",
+            "\t<field name=\"${3:field_name}\">${4:field_value}</field>",
+            "</record>"
+        ],
+        "description": "Add record"
+    },
+    "odoo_function": {
+        "prefix": "oofunction",
+        "body": [
+            "<function model=\"${1:model.name}\" name=\"${2:method_name}\" eval=\"[ref('${3:record_id}')]\">",
+            "</function>"
+        ],
+        "description": "Add function"
+    },
+    "odoo_menu_root": {
+        "prefix": "oomenu_root",
+        "body": [
+            "<menuitem",
+            "\tid=\"${1:model_name}_menu\"",
+            "\tname=\"${2:name}\"",
+            "\twebicon=\"${3:path}\"",
+            "\tsequence=\"${4:10}\"/>"
+        ],
+        "description": "Add root menu"
+    },
+    "odoo_menu_sub": {
+        "prefix": "oomenu_sub",
+        "body": [
+            "<menuitem",
+            "\tid=\"${1:model_name}_menu\"",
+            "\tname=\"${2:name}\"",
+            "\taction=\"${3:action_id}\"",
+            "\tgroups=\"${4:groups_id}\"",
+            "\tparent=\"${5:parent_id}\"",
+            "\tsequence=\"${6:10}\"/>"
+        ],
+        "description": "Add sub menu"
+    },
+    "odoo_template": {
+        "prefix": "ootemplate",
+        "body": [
+            "<template id=\"${1:template_id}\" name=\"${2:template_name}\">",
+            "\t${0}",
+            "</template>"
+        ],
+        "description": "Add template"
+    },
+    "odoo_template_inherit": {
+        "prefix": "ootemplatei",
+        "body": [
+            "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
+            "\t$0",
+            "</template>"
+        ],
+        "description": "Add template inherit"
+    },
+    "odoo_script": {
+        "prefix": "ooscript",
+        "body": [
+            "<script type=\"text/javascript\" href=\"/${1:module_name}/static/src/js/${2:filename}.js\"></script>"
+        ],
+        "description": "Add script tag"
+    },
+    "odoo_link": {
+        "prefix": "oolink",
+        "body": [
+            "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.css\"/>"
+        ],
+        "description": "Add link tag to include stylesheet"
+    },
+    "odoo_field": {
+        "prefix": "oofield",
+        "body": [
+            "<field name=\"${1}\"></field>"
+        ],
+        "description": "Add field tag"
+    },
+    "odoo_chatter": {
+        "prefix": "oochatter",
+        "body": [
+            "<div class=\"oe_chatter\">",
+            "\t<field name=\"message_follower_ids\" widget=\"mail_followers\"/>",
+            "\t<field name=\"activity_ids\" widget=\"mail_activity\"/>",
+            "\t<field name=\"message_ids\" widget=\"mail_thread\"/>",
+            "</div>"
+        ],
+        "description": "Add chatter"
+    }
+}
