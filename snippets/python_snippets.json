@@ -182,5 +182,12 @@
             "\treturn super().unlink()"
         ],
         "description": "Add unlink method"
+    },
+    "odoo_method_super": {
+        "prefix": "oosuper",
+        "body": [
+            "super(ClassName,self).method(args)",
+        ],
+        "description": "Add unlink method"
     }
 }
