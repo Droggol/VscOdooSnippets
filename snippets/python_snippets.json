@@ -186,8 +186,8 @@
     "odoo_method_super": {
         "prefix": "oosuper",
         "body": [
-            "super(ClassName,self).method(args)",
+            "super().${0:function_name}(${1:args})",
         ],
-        "description": "Add unlink method"
+        "description": "Add Super method"
     }
 }
