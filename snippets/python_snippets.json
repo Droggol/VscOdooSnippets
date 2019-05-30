@@ -183,11 +183,6 @@
         ],
         "description": "Add unlink method"
     },
-    "odoo_method_super": {
-        "prefix": "oosuper",
-        "body": [
-            "super().${0:function_name}(${1:args})",
-        ],
-        "description": "Add Super method"
-    }
+
+    
 }
