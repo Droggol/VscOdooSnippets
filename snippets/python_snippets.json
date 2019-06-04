@@ -112,14 +112,14 @@
     "odoo_field_one2many": {
         "prefix": "oofone2many",
         "body": [
-            "${1:field_name} = fields.One2Many('${2:comodel_name}', string='${3}')${0}"
+            "${1:field_name} = fields.One2many('${2:comodel_name}', string='${3}')${0}"
         ],
         "description": "Add One2Many field"
     },
     "odoo_field_many2many": {
         "prefix": "oofmany2many",
         "body": [
-            "${1:field_name} = fields.Many2Many('${2:comodel_name}', string='${3}')${0}"
+            "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3}')${0}"
         ],
         "description": "Add Many2Many field"
     },
