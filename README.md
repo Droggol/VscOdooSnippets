@@ -3,6 +3,18 @@
         <img src="https://raw.githubusercontent.com/jat-odoo/VscOdooSnippets/master/images/icon.png"/>
     </a>
     <div>Odoo Snippets</div>
+    <a href="https://marketplace.visualstudio.com/items?itemName=jigar-patel.OdooSnippets">
+        <img src="https://img.shields.io/visual-studio-marketplace/v/jigar-patel.OdooSnippets.svg?label=Version&style=flat-square&color=875A7B" alt="Version"/>
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=jigar-patel.OdooSnippets">
+        <img src="https://img.shields.io/visual-studio-marketplace/i/jigar-patel.OdooSnippets.svg?label=Installs&style=flat-square&color=875A7B" alt="Installs"/>
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=jigar-patel.OdooSnippets">
+        <img src="https://img.shields.io/visual-studio-marketplace/d/jigar-patel.OdooSnippets.svg?label=Downloads&style=flat-square&color=875A7B" alt="Downloads"/>
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=jigar-patel.OdooSnippets&ssr=false#review-details">
+        <img src="https://img.shields.io/visual-studio-marketplace/r/jigar-patel.OdooSnippets.svg?label=Rating&style=flat-square&color=875A7B" alt="Ratings"/>
+    </a>
 </h1>
 
 > Do less, Get more
