@@ -1,4 +1,17 @@
 {
+    "odoo_define": {
+        "prefix": "oodefine",
+        "body": [
+            "odoo.define('${1:module_name}', function (require) {",
+            "\"use strict;\"",
+            "",
+            "${0}",
+            "",
+            "});",
+            ""
+        ],
+        "description": "Defining a module"
+    },
     "odoo_widget": {
         "prefix": "oowidget",
         "body": [
@@ -70,6 +83,33 @@
         ],
         "description": "Add dialog widget"
     },
+    "odoo_alert": {
+        "prefix": "ooalert",
+        "body": [
+            "Dialog.alert(this, _t(\"${1:message}\"), {",
+            "\ttitle: _t('${2:title}'),",
+            "\tconfirm_callback: function () {",
+            "\t\t${0}",
+            "\t},",
+            "});"
+        ],
+        "description": "Add alert dialog"
+    },
+    "odoo_confirm": {
+        "prefix": "ooconfirm",
+        "body": [
+            "Dialog.confirm(this, _t(\"${1:message}\"), {",
+            "\ttitle: _t('${2:title}'),",
+            "\tconfirm_callback: function () {",
+            "\t\t${0}",
+            "\t},",
+            "\tcancel_callback: function () {",
+            "\t\t",
+            "\t},",
+            "});"
+        ],
+        "description": "Add confirm dialog"
+    },
     "odoo_rpc": {
         "prefix": "oorpc",
         "body": [
@@ -83,6 +123,20 @@
             "});"
         ],
         "description": "Add rpc call"
+    },
+    "odoo_route": {
+        "prefix": "oorpc_route",
+        "body": [
+            "return this._rpc({",
+            "\troute: '${1:url}',",
+            "\tparams: {",
+            "\t\t${2:params}",
+            "\t}",
+            "}).then(function (result) {",
+            "\t${0}",
+            "});"
+        ],
+        "description": "Add route rpc call"
     },
     "odoo_super": {
         "prefix": "oosuper",
