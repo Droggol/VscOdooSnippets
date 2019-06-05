@@ -1,4 +1,4 @@
-## Snippets with file types
+## Snippets
 
 All snippets prefixed with `oo`.
 
