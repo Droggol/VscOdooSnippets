@@ -32,9 +32,13 @@ unlink | Add unlink method
 
 Prefix | Description
 ------------ | -------------
+define | Defining a module
 widget | Add widget
 dialog | Add dialog widget
+alert | Add alert dialog
+confirm | Add confirm dialog
 rpc | Add rpc call
+rpc_route | Add route rpc call
 super | Add super statement
 
 #### XML (`.xml`)
