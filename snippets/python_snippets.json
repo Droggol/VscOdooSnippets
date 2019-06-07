@@ -102,6 +102,13 @@
         ],
         "description": "Add Binary field"
     },
+    "odoo_field_monetary": {
+        "prefix": "oofmonetary",
+        "body": [
+            "${1:field_name} = fields.Monetary(string='${2}')${0}"
+        ],
+        "description": "Add Monetary field"
+    },
     "odoo_field_many2one": {
         "prefix": "oofmany2one",
         "body": [
@@ -126,7 +133,7 @@
     "odoo_field_compute": {
         "prefix": "oofcompute",
         "body": [
-            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary|}(compute='_compute_${1}', string='${3}')",
+            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary,Monetary|}(compute='_compute_${1}', string='${3}')",
             "",
             "@api.depends('${0}')",
             "def _compute_${1}(self):",
@@ -155,6 +162,15 @@
             "\t${0:pass}"
         ],
         "description": "Add onchange field"
+    },
+    "odoo_field_constrains": {
+        "prefix": "oofconstrains",
+        "body": [
+            "@api.constrains('${1:fieldname}')",
+            "def _constrains_${1}(self):",
+            "\t${0:pass}"
+        ],
+        "description": "Add constrains on field"
     },
     "odoo_method_create": {
         "prefix": "oocreate",
