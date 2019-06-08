@@ -185,6 +185,37 @@
         ],
         "description": "Add qweb view"
     },
+    "odoo_report": {
+        "prefix": "ooreport",
+        "body": [
+            "<report",
+            "\tid=\"action_report_${1:model_name}\"",
+            "\tmodel=\"${2:model.name}\"",
+            "\tstring=\"${3:Report name}\"",
+            "\treport_type=\"${4|qweb-pdf,qweb-html,qweb-text|}\"",
+            "\tname=\"${5:module_name.report_template_name}\"",
+            "\tfile=\"${5:module_name.report_template_name}\"",
+            "/>"
+        ],
+        "description": "Add report action"
+    },
+    "odoo_report_template": {
+        "prefix": "ooreport_template",
+        "body": [
+            "<template id=\"${1:report_template_name}\">",
+            "\t<t t-call=\"web.html_container\">",
+            "\t\t<t t-foreach=\"docs\" t-as=\"doc\">",
+            "\t\t\t<t t-call=\"web.${2|external,internal|}_layout\">",
+            "\t\t\t\t<div class=\"page\">",
+            "\t\t\t\t\t${0}",
+            "\t\t\t\t</div>",
+            "\t\t\t</t>",
+            "\t\t</t>",
+            "\t</t>",
+            "</template>"
+        ],
+        "description": "Add report template"
+    },
     "odoo_xpath": {
         "prefix": "ooxpath",
         "body": [
