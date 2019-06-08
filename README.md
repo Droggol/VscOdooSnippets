@@ -19,8 +19,6 @@
     </div>
 </h1>
 
-> Do less, Get more
-
 This extension contains predefined code snippets for [Odoo](https://www.odoo.com/) developer. Snippets are available for following supported languages (file extensions):
 * Python (`.py`)
 * Javascript (`.js`)
