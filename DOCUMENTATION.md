@@ -18,12 +18,14 @@ fselection | Add Selection field
 fdate | Add Date field
 fdatetime | Add DateTime field
 fbinary | Add Binary field
+fmonetary | Add Monetary field
 fmany2one | Add Many2one field
 fone2many | Add One2Many field
 fmany2many | Add Many2Many field
 fcompute | Add Compute field
 fcomputei | Add Compute field with inverse method
 fonchange | Add onchange field
+fconstrains | Add constrains on field
 create | Add create method
 write | Add write method
 unlink | Add unlink method
@@ -57,6 +59,8 @@ graph | Add graph view
 pivot | Add pivot view
 activity | Add activity view
 qweb | Add qweb view
+report | Add report action
+report_template | Add report template
 xpath | Add xpath
 xpath_attr | Add xpath to attributes
 action | Add action
