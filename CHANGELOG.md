@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this visual studio code extension will be documented in this file.
 
+## [0.0.3](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.3) - 2019-06-17
+### Added
+- New snippet "Add constrains on field" for py. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+- New snippet "Add Monetary field" for py. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+- New snippet "Add report action" for xml. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+- New snippet "Add report template" for xml. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+
+### Changed
+- Add metadata badges in README. [PR #7](https://github.com/jat-odoo/VscOdooSnippets/pull/7)
+- Add homepage link on marketplace. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+- Rename file READMEDETAIL to DOCUMENTATION. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
+- Better typos for changelog. [PR #9](https://github.com/jat-odoo/VscOdooSnippets/pull/9)
+
 ## [0.0.2](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.2) - 2019-06-05
 ### Added
 - New snippet "Defining a module" for js. [PR #6](https://github.com/jat-odoo/VscOdooSnippets/pull/6)
