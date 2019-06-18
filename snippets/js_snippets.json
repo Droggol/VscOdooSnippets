@@ -3,9 +3,9 @@
         "prefix": "oodefine",
         "body": [
             "odoo.define('${1:module_name}', function (require) {",
-            "\"use strict;\"",
+            "\t\"use strict\";",
             "",
-            "${0}",
+            "\t${0}",
             "",
             "});",
             ""
