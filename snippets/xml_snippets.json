@@ -341,7 +341,7 @@
     "odoo_script": {
         "prefix": "ooscript",
         "body": [
-            "<script type=\"text/javascript\" href=\"/${1:module_name}/static/src/js/${2:filename}.js\"></script>"
+            "<script type=\"text/javascript\" src=\"/${1:module_name}/static/src/js/${2:filename}.js\"/>"
         ],
         "description": "Add script tag"
     },
