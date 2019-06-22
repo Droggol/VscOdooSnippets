@@ -59,6 +59,9 @@ graph | Add graph view
 pivot | Add pivot view
 activity | Add activity view
 qweb | Add qweb view
+button_header | Add button in form view header
+button_box | Add stat button(s) container in form view
+button_stat | Add stat button in form view
 report | Add report action
 report_template | Add report template
 xpath | Add xpath

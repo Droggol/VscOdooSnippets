@@ -185,6 +185,31 @@
         ],
         "description": "Add qweb view"
     },
+    "odoo_header_button": {
+        "prefix": "oobutton_header",
+        "body": [
+            "<button string=\"${1}\" name=\"${2:action_name}\" type=\"${3|object,action|}\" class=\"oe_highlight\"/>"
+        ],
+        "description": "Add button in form view header"
+    },
+    "odoo_button_box": {
+        "prefix": "oobutton_box",
+        "body": [
+            "<div class=\"oe_button_box\" name=\"button_box\">",
+            "\t${0}",
+            "</div>"
+        ],
+        "description": "Add stat button(s) container in form view"
+    },
+    "odoo_stat_button": {
+        "prefix": "oobutton_stat",
+        "body": [
+            "<button name=\"${1:action_name}\" type=\"${2|object,action|}\" class=\"oe_stat_button\" icon=\"fa-${3}\">",
+            "\t<field name=\"${4:field_name}\" string=\"${5}\" widget=\"statinfo\"/>",
+            "</button>"
+        ],
+        "description": "Add stat button in form view"
+    },
     "odoo_report": {
         "prefix": "ooreport",
         "body": [
