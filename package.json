@@ -2,7 +2,7 @@
     "name": "OdooSnippets",
     "displayName": "Odoo Snippets",
     "description": "Snippets for Odoo developer (Do Less, Get More).",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "icon": "images/icon.png",
     "publisher": "jigar-patel",
     "engines": {

@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this visual studio code extension will be documented in this file.
 
+## [0.0.4](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.4) - 2019-06-24
+### Added
+- New snippet "Add header button" for xml. [PR #13](https://github.com/jat-odoo/VscOdooSnippets/pull/13)
+- New snippet "Add stat button(s) container" for xml. [PR #13](https://github.com/jat-odoo/VscOdooSnippets/pull/13)
+- New snippet "Add stat button" for xml. [PR #13](https://github.com/jat-odoo/VscOdooSnippets/pull/13)
+
+### Changed
+- Add missing docs for snippets. [PR #12](https://github.com/jat-odoo/VscOdooSnippets/pull/12)
+
+### Fixed
+- Fix oodefine indentation and semicolon. [PR #10](https://github.com/jat-odoo/VscOdooSnippets/pull/10) by [@Yajo](https://github.com/Yajo) Thank you!
+- Fix ooscript tag attribute. [PR #11](https://github.com/jat-odoo/VscOdooSnippets/pull/11) by [@Yajo](https://github.com/Yajo) Thank you!
+
 ## [0.0.3](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.3) - 2019-06-17
 ### Added
 - New snippet "Add constrains on field" for py. [PR #8](https://github.com/jat-odoo/VscOdooSnippets/pull/8)
