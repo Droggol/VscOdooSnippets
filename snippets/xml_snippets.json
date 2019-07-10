@@ -1,5 +1,5 @@
 {
-    "odoo_namespace": {
+    "Namespace": {
         "prefix": "oonamespace",
         "body": [
             "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
@@ -11,7 +11,7 @@
         ],
         "description": "Add Odoo namespace"
     },
-    "odoo_view_form": {
+    "Form view": {
         "prefix": "ooform",
         "body": [
             "<record id=\"${1:model_name}_view_form\" model=\"ir.ui.view\">",
@@ -30,7 +30,7 @@
         ],
         "description": "Add form view"
     },
-    "odoo_view_list": {
+    "List view": {
         "prefix": "oolist",
         "body": [
             "<record id=\"${1:model_name}_view_tree\" model=\"ir.ui.view\">",
@@ -45,7 +45,7 @@
         ],
         "description": "Add list view"
     },
-    "odoo_view_kanban": {
+    "Kanban view": {
         "prefix": "ookanban",
         "body": [
             "<record id=\"${1:model_name}_view_kanban\" model=\"ir.ui.view\">",
@@ -64,7 +64,7 @@
         ],
         "description": "Add kanban view"
     },
-    "odoo_view_search": {
+    "Search view": {
         "prefix": "oosearch",
         "body": [
             "<record id=\"${1:model_name}_view_search\" model=\"ir.ui.view\">",
@@ -79,7 +79,7 @@
         ],
         "description": "Add search view"
     },
-    "odoo_view_calendar": {
+    "Calendar view": {
         "prefix": "oocalendar",
         "body": [
             "<record id=\"${1:model_name}_view_calendar\" model=\"ir.ui.view\">",
@@ -94,7 +94,7 @@
         ],
         "description": "Add calendar view"
     },
-    "odoo_view_cohort": {
+    "Cohort view": {
         "prefix": "oocohort",
         "body": [
             "<record id=\"${1:model_name}_view_cohort\" model=\"ir.ui.view\">",
@@ -108,7 +108,7 @@
         ],
         "description": "Add cohort view"
     },
-    "odoo_view_gantt": {
+    "Gantt view": {
         "prefix": "oogantt",
         "body": [
             "<record id=\"${1:model_name}_view_gantt\" model=\"ir.ui.view\">",
@@ -122,7 +122,7 @@
         ],
         "description": "Add gantt view"
     },
-    "odoo_view_graph": {
+    "Graph view": {
         "prefix": "oograph",
         "body": [
             "<record id=\"${1:model_name}_view_graph\" model=\"ir.ui.view\">",
@@ -137,7 +137,7 @@
         ],
         "description": "Add graph view"
     },
-    "odoo_view_pivot": {
+    "Pivot view": {
         "prefix": "oopivot",
         "body": [
             "<record id=\"${1:model_name}_view_pivot\" model=\"ir.ui.view\">",
@@ -152,7 +152,7 @@
         ],
         "description": "Add pivot view"
     },
-    "odoo_view_activity": {
+    "Activity view": {
         "prefix": "ooactivity",
         "body": [
             "<record id=\"${1:model_name}_view_activity\" model=\"ir.ui.view\">",
@@ -171,7 +171,7 @@
         ],
         "description": "Add activity view"
     },
-    "odoo_view_qweb": {
+    "Qweb view": {
         "prefix": "ooqweb",
         "body": [
             "<record id=\"${1:model_name}_view_qweb\" model=\"ir.ui.view\">",
@@ -185,14 +185,14 @@
         ],
         "description": "Add qweb view"
     },
-    "odoo_header_button": {
+    "Header button": {
         "prefix": "oobutton_header",
         "body": [
             "<button string=\"${1}\" name=\"${2:action_name}\" type=\"${3|object,action|}\" class=\"oe_highlight\"/>"
         ],
         "description": "Add button in form view header"
     },
-    "odoo_button_box": {
+    "Button box": {
         "prefix": "oobutton_box",
         "body": [
             "<div class=\"oe_button_box\" name=\"button_box\">",
@@ -201,7 +201,7 @@
         ],
         "description": "Add stat button(s) container in form view"
     },
-    "odoo_stat_button": {
+    "Stat button": {
         "prefix": "oobutton_stat",
         "body": [
             "<button name=\"${1:action_name}\" type=\"${2|object,action|}\" class=\"oe_stat_button\" icon=\"fa-${3}\">",
@@ -210,7 +210,7 @@
         ],
         "description": "Add stat button in form view"
     },
-    "odoo_report": {
+    "Report action": {
         "prefix": "ooreport",
         "body": [
             "<report",
@@ -224,7 +224,7 @@
         ],
         "description": "Add report action"
     },
-    "odoo_report_template": {
+    "Report template": {
         "prefix": "ooreport_template",
         "body": [
             "<template id=\"${1:report_template_name}\">",
@@ -241,7 +241,7 @@
         ],
         "description": "Add report template"
     },
-    "odoo_xpath": {
+    "Xpath": {
         "prefix": "ooxpath",
         "body": [
             "<xpath expr=\"${1}\" position=\"${2|inside,after,before,replace,move|}\">",
@@ -250,7 +250,7 @@
         ],
         "description": "Add xpath"
     },
-    "odoo_xpath_attributes": {
+    "Xpath attributes": {
         "prefix": "ooxpath_attr",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
@@ -259,7 +259,7 @@
         ],
         "description": "Add xpath to attributes"
     },
-    "odoo_action": {
+    "Action": {
         "prefix": "ooaction",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
@@ -276,7 +276,7 @@
         ],
         "description": "Add action"
     },
-    "odoo_server_action": {
+    "Server action": {
         "prefix": "ooserver_action",
         "body": [
             "<record id=\"${1:model_name}_action_server\" model=\"ir.actions.server\">",
@@ -289,7 +289,7 @@
         ],
         "description": "Add server action"
     },
-    "odoo_cron": {
+    "Cron job": {
         "prefix": "oocron",
         "body": [
             "<record id=\"${1:model_name}_cron\" model=\"ir.cron\">",
@@ -304,7 +304,7 @@
         ],
         "description": "Add cron job"
     },
-    "odoo_record": {
+    "Record": {
         "prefix": "oorecord",
         "body": [
             "<record id=\"${1:record_name}\" model=\"${2:model_name}\">",
@@ -313,7 +313,7 @@
         ],
         "description": "Add record"
     },
-    "odoo_function": {
+    "Function": {
         "prefix": "oofunction",
         "body": [
             "<function model=\"${1:model.name}\" name=\"${2:method_name}\" eval=\"[ref('${3:record_id}')]\">",
@@ -321,7 +321,7 @@
         ],
         "description": "Add function"
     },
-    "odoo_menu_root": {
+    "Root menu": {
         "prefix": "oomenu_root",
         "body": [
             "<menuitem",
@@ -332,7 +332,7 @@
         ],
         "description": "Add root menu"
     },
-    "odoo_menu_sub": {
+    "Sub menu": {
         "prefix": "oomenu_sub",
         "body": [
             "<menuitem",
@@ -345,7 +345,7 @@
         ],
         "description": "Add sub menu"
     },
-    "odoo_template": {
+    "Template": {
         "prefix": "ootemplate",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${2:template_name}\">",
@@ -354,7 +354,7 @@
         ],
         "description": "Add template"
     },
-    "odoo_template_inherit": {
+    "Inherit template": {
         "prefix": "ootemplatei",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
@@ -363,28 +363,28 @@
         ],
         "description": "Add template inherit"
     },
-    "odoo_script": {
+    "Script tag": {
         "prefix": "ooscript",
         "body": [
             "<script type=\"text/javascript\" src=\"/${1:module_name}/static/src/js/${2:filename}.js\"/>"
         ],
         "description": "Add script tag"
     },
-    "odoo_link": {
+    "Link tag": {
         "prefix": "oolink",
         "body": [
             "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.css\"/>"
         ],
         "description": "Add link tag to include stylesheet"
     },
-    "odoo_field": {
+    "Field tag": {
         "prefix": "oofield",
         "body": [
             "<field name=\"${1}\"></field>"
         ],
         "description": "Add field tag"
     },
-    "odoo_chatter": {
+    "Chatter": {
         "prefix": "oochatter",
         "body": [
             "<div class=\"oe_chatter\">",
