@@ -121,14 +121,14 @@
         "body": [
             "${1:field_name} = fields.One2many('${2:comodel_name}', string='${3}')${0}"
         ],
-        "description": "Add One2Many field"
+        "description": "Add One2many field"
     },
     "Many2many field": {
         "prefix": "oofmany2many",
         "body": [
             "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3}')${0}"
         ],
-        "description": "Add Many2Many field"
+        "description": "Add Many2many field"
     },
     "Compute field": {
         "prefix": "oofcompute",
