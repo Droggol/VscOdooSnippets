@@ -259,7 +259,7 @@
         ],
         "description": "Add xpath to attributes"
     },
-    "Action": {
+    "Action (v12 or older)": {
         "prefix": "ooaction",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
@@ -274,7 +274,23 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add action"
+        "description": "Add action for v12 or older"
+    },
+    "Action (v13)": {
+        "prefix": "ooaction",
+        "body": [
+            "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
+            "\t<field name=\"name\">${2:Action Name}</field>",
+            "\t<field name=\"res_model\">${3:model.name}</field>",
+            "\t<field name=\"view_mode\">${4:tree}</field>",
+            "\t<field name=\"domain\">[${5}]</field>",
+            "\t<field name=\"context\">{${6}}</field>",
+            "\t<field name=\"help\" type=\"html\">",
+            "\t\t${0}",
+            "\t</field>",
+            "</record>"
+        ],
+        "description": "Add action for v13"
     },
     "Server action": {
         "prefix": "ooserver_action",
@@ -288,6 +304,28 @@
             "</record>"
         ],
         "description": "Add server action"
+    },
+    "URL action": {
+        "prefix": "oourl_action",
+        "body": [
+            "<record id=\"action_${1:action_name}\" model=\"ir.actions.act_url\">",
+            "\t<field name=\"name\">${2:Action Name}</field>",
+            "\t<field name=\"url\">${3:url}</field>",
+            "\t<field name=\"target\">${4|new,self|}</field>",
+            "</record>"
+        ],
+        "description": "Add URL action"
+    },
+    "Client action": {
+        "prefix": "ooclient_action",
+        "body": [
+            "<record id=\"action_${1:action_name}\" model=\"ir.actions.client\">",
+            "\t<field name=\"name\">${2:Action Name}</field>",
+            "\t<field name=\"tag\">${3:action_tag_name}</field>",
+            "\t<field name=\"target\">${4|main,fullscreen,new|}</field>",
+            "</record>"
+        ],
+        "description": "Add client action"
     },
     "Cron job": {
         "prefix": "oocron",

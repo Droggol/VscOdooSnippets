@@ -68,6 +68,8 @@ xpath | Add xpath
 xpath_attr | Add xpath to attributes
 action | Add action
 server_action | Add server action
+url_action | Add URL action
+client_action | Add client action
 cron | Add cron job
 record | Add record
 function | Add function
