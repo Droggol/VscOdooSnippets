@@ -1,5 +1,5 @@
 {
-    "odoo_add_manifest": {
+    "Manifest": {
         "prefix": "oomanifest",
         "body": [
             "{",
@@ -20,7 +20,7 @@
         ],
         "description": "Add manifest json"
     },
-    "odoo_add_model": {
+    "Model": {
         "prefix": "oomodel",
         "body": [
             "from odoo import _, api, fields, models",
@@ -30,49 +30,49 @@
         ],
         "description": "Add model"
     },
-    "odoo_field_char": {
+    "Char field": {
         "prefix": "oofchar",
         "body": [
             "${1:field_name} = fields.Char(string='${2}')${0}"
         ],
         "description": "Add Char field"
     },
-    "odoo_field_text": {
+    "Text field": {
         "prefix": "ooftext",
         "body": [
             "${1:field_name} = fields.Text(string='${2}')${0}"
         ],
         "description": "Add Text field"
     },
-    "odoo_field_html": {
+    "Html field": {
         "prefix": "oofhtml",
         "body": [
             "${1:field_name} = fields.Html(string='${2}')${0}"
         ],
         "description": "Add Html field"
     },
-    "odoo_field_boolean": {
+    "Boolean field": {
         "prefix": "oofboolean",
         "body": [
             "${1:field_name} = fields.Boolean(string='${2}')${0}"
         ],
         "description": "Add Boolean field"
     },
-    "odoo_field_integer": {
+    "Integer field": {
         "prefix": "oofinteger",
         "body": [
             "${1:field_name} = fields.Integer(string='${2}')${0}"
         ],
         "description": "Add Integer field"
     },
-    "odoo_field_float": {
+    "Float field": {
         "prefix": "ooffloat",
         "body": [
             "${1:field_name} = fields.Float(string='${2}', digits=(${3:total, decimal}))${0}"
         ],
         "description": "Add Float field"
     },
-    "odoo_field_selection": {
+    "Selection field": {
         "prefix": "oofselection",
         "body": [
             "${1:field_name} = fields.Selection([",
@@ -81,56 +81,56 @@
         ],
         "description": "Add Selection field"
     },
-    "odoo_field_date": {
+    "Date field": {
         "prefix": "oofdate",
         "body": [
             "${1:field_name} = fields.Date(string='${2}')${0}"
         ],
         "description": "Add Date field"
     },
-    "odoo_field_datetime": {
+    "Datetime field": {
         "prefix": "oofdatetime",
         "body": [
             "${1:field_name} = fields.DateTime(string='${2}')${0}"
         ],
         "description": "Add DateTime field"
     },
-    "odoo_field_binary": {
+    "Binary field": {
         "prefix": "oofbinary",
         "body": [
             "${1:field_name} = fields.Binary(string='${2}')${0}"
         ],
         "description": "Add Binary field"
     },
-    "odoo_field_monetary": {
+    "Monetary field": {
         "prefix": "oofmonetary",
         "body": [
             "${1:field_name} = fields.Monetary(string='${2}')${0}"
         ],
         "description": "Add Monetary field"
     },
-    "odoo_field_many2one": {
+    "Many2one field": {
         "prefix": "oofmany2one",
         "body": [
             "${1:field_name} = fields.Many2one('${2:comodel_name}', string='${3}')${0}"
         ],
         "description": "Add Many2one field"
     },
-    "odoo_field_one2many": {
+    "One2many field": {
         "prefix": "oofone2many",
         "body": [
             "${1:field_name} = fields.One2many('${2:comodel_name}', string='${3}')${0}"
         ],
         "description": "Add One2Many field"
     },
-    "odoo_field_many2many": {
+    "Many2many field": {
         "prefix": "oofmany2many",
         "body": [
             "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3}')${0}"
         ],
         "description": "Add Many2Many field"
     },
-    "odoo_field_compute": {
+    "Compute field": {
         "prefix": "oofcompute",
         "body": [
             "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary,Monetary|}(compute='_compute_${1}', string='${3}')",
@@ -141,7 +141,7 @@
         ],
         "description": "Add Compute field"
     },
-    "odoo_field_compute_inverse": {
+    "Compute field with inverse": {
         "prefix": "oofcomputei",
         "body": [
             "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary|}(compute='_compute_${1}', inverse='_inverse_${1}', string='${3}')",
@@ -154,7 +154,7 @@
         ],
         "description": "Add Compute field with inverse method"
     },
-    "odoo_field_onchange": {
+    "Onchange field": {
         "prefix": "oofonchange",
         "body": [
             "@api.depends('${1}')",
@@ -163,7 +163,7 @@
         ],
         "description": "Add onchange field"
     },
-    "odoo_field_constrains": {
+    "Constrains on field": {
         "prefix": "oofconstrains",
         "body": [
             "@api.constrains('${1:fieldname}')",
@@ -172,7 +172,7 @@
         ],
         "description": "Add constrains on field"
     },
-    "odoo_method_create": {
+    "Create method": {
         "prefix": "oocreate",
         "body": [
             "@api.${1|model,model_create_multi|}",
@@ -181,7 +181,7 @@
         ],
         "description": "Add create method"
     },
-    "odoo_method_write": {
+    "Write method": {
         "prefix": "oowrite",
         "body": [
             "@api.multi",
@@ -190,7 +190,7 @@
         ],
         "description": "Add write method"
     },
-    "odoo_method_unlink": {
+    "Unlink method": {
         "prefix": "oounlink",
         "body": [
             "@api.multi",
