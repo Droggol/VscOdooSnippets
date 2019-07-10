@@ -91,9 +91,9 @@
     "Datetime field": {
         "prefix": "oofdatetime",
         "body": [
-            "${1:field_name} = fields.DateTime(string='${2}')${0}"
+            "${1:field_name} = fields.Datetime(string='${2}')${0}"
         ],
-        "description": "Add DateTime field"
+        "description": "Add Datetime field"
     },
     "Binary field": {
         "prefix": "oofbinary",
