@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this visual studio code extension will be documented in this file.
 
+## [0.0.5](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.5) - 2019-07-11
+### Added
+- New snippet "Add action for v13" for xml. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+- New snippet "Add URL action" for xml. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+- New snippet "Add client action" for xml. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+
+### Changed
+- Change snippets name, it open possibility to maintain versions. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+- Improve description of relational field snippets. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+
+### Fixed
+- Use correct typo to declare datetime type field. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
+
 ## [0.0.4](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.4) - 2019-06-24
 ### Added
 - New snippet "Add header button" for xml. [PR #13](https://github.com/jat-odoo/VscOdooSnippets/pull/13)
