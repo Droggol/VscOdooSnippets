@@ -119,7 +119,7 @@
     "One2many field": {
         "prefix": "oofone2many",
         "body": [
-            "${1:field_name} = fields.One2many('${2:comodel_name}', string='${3}')${0}"
+            "${1:field_name} = fields.One2many('${2:comodel_name}', '${3:inverse_field_name}', string='${4}')${0}"
         ],
         "description": "Add One2many field"
     },
