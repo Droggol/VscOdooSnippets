@@ -157,7 +157,7 @@
     "Onchange field": {
         "prefix": "oofonchange",
         "body": [
-            "@api.depends('${1}')",
+            "@api.onchange('${1}')",
             "def _onchange_${1}(self):",
             "\t${0:pass}"
         ],
