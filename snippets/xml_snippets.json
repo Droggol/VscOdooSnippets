@@ -415,10 +415,17 @@
         ],
         "description": "Add link tag to include stylesheet"
     },
+    "Self-closing field tag": {
+        "prefix": "oofield",
+        "body": [
+            "<field name=\"${1}\"${2}/>${0}"
+        ],
+        "description": "Add a self-closing field tag"
+    },
     "Field tag": {
         "prefix": "oofield",
         "body": [
-            "<field name=\"${1}\"></field>"
+            "<field name=\"${1}\"${2}>${3}</field>${0}"
         ],
         "description": "Add field tag"
     },
