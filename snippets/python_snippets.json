@@ -35,42 +35,42 @@
         "body": [
             "${1:field_name} = fields.Char(string='${2}')${0}"
         ],
-        "description": "Add Char field"
+        "description": "Add char field"
     },
     "Text field": {
         "prefix": "ooftext",
         "body": [
             "${1:field_name} = fields.Text(string='${2}')${0}"
         ],
-        "description": "Add Text field"
+        "description": "Add text field"
     },
     "Html field": {
         "prefix": "oofhtml",
         "body": [
             "${1:field_name} = fields.Html(string='${2}')${0}"
         ],
-        "description": "Add Html field"
+        "description": "Add html field"
     },
     "Boolean field": {
         "prefix": "oofboolean",
         "body": [
             "${1:field_name} = fields.Boolean(string='${2}')${0}"
         ],
-        "description": "Add Boolean field"
+        "description": "Add boolean field"
     },
     "Integer field": {
         "prefix": "oofinteger",
         "body": [
             "${1:field_name} = fields.Integer(string='${2}')${0}"
         ],
-        "description": "Add Integer field"
+        "description": "Add integer field"
     },
     "Float field": {
         "prefix": "ooffloat",
         "body": [
             "${1:field_name} = fields.Float(string='${2}', digits=(${3:total, decimal}))${0}"
         ],
-        "description": "Add Float field"
+        "description": "Add float field"
     },
     "Selection field": {
         "prefix": "oofselection",
@@ -79,56 +79,56 @@
             "\t('${2:key}', '${3:value}')",
             "], string='${4}')${0}"
         ],
-        "description": "Add Selection field"
+        "description": "Add selection field"
     },
     "Date field": {
         "prefix": "oofdate",
         "body": [
             "${1:field_name} = fields.Date(string='${2}')${0}"
         ],
-        "description": "Add Date field"
+        "description": "Add date field"
     },
     "Datetime field": {
         "prefix": "oofdatetime",
         "body": [
             "${1:field_name} = fields.Datetime(string='${2}')${0}"
         ],
-        "description": "Add Datetime field"
+        "description": "Add datetime field"
     },
     "Binary field": {
         "prefix": "oofbinary",
         "body": [
             "${1:field_name} = fields.Binary(string='${2}')${0}"
         ],
-        "description": "Add Binary field"
+        "description": "Add binary field"
     },
     "Monetary field": {
         "prefix": "oofmonetary",
         "body": [
             "${1:field_name} = fields.Monetary(string='${2}')${0}"
         ],
-        "description": "Add Monetary field"
+        "description": "Add monetary field"
     },
     "Many2one field": {
         "prefix": "oofmany2one",
         "body": [
             "${1:field_name} = fields.Many2one('${2:comodel_name}', string='${3}')${0}"
         ],
-        "description": "Add Many2one field"
+        "description": "Add many2one field"
     },
     "One2many field": {
         "prefix": "oofone2many",
         "body": [
             "${1:field_name} = fields.One2many('${2:comodel_name}', '${3:inverse_field_name}', string='${4}')${0}"
         ],
-        "description": "Add One2many field"
+        "description": "Add one2many field"
     },
     "Many2many field": {
         "prefix": "oofmany2many",
         "body": [
             "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3}')${0}"
         ],
-        "description": "Add Many2many field"
+        "description": "Add many2many field"
     },
     "Compute field": {
         "prefix": "oofcompute",
@@ -139,7 +139,7 @@
             "def _compute_${1}(self):",
             "\tpass"
         ],
-        "description": "Add Compute field"
+        "description": "Add compute field"
     },
     "Compute field with inverse": {
         "prefix": "oofcomputei",
@@ -152,7 +152,7 @@
             "def _inverse_${1}(self):",
             "\tpass"
         ],
-        "description": "Add Compute field with inverse method"
+        "description": "Add compute field with inverse method"
     },
     "Onchange field": {
         "prefix": "oofonchange",

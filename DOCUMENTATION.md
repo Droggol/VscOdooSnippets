@@ -7,22 +7,22 @@ Prefix | Description
 ------------ | -------------
 manifest | Add manifest json
 model | Add model
-fchar | Add Char field
-ftext | Add Text field
-fhtml | Add Html field
-fboolean | Add Boolean field
-finteger | Add Integer field
-ffloat | Add Float field
-fselection | Add Selection field
+fchar | Add char field
+ftext | Add text field
+fhtml | Add html field
+fboolean | Add boolean field
+finteger | Add integer field
+ffloat | Add float field
+fselection | Add selection field
 fdate | Add Date field
-fdatetime | Add DateTime field
-fbinary | Add Binary field
-fmonetary | Add Monetary field
-fmany2one | Add Many2one field
-fone2many | Add One2Many field
-fmany2many | Add Many2Many field
-fcompute | Add Compute field
-fcomputei | Add Compute field with inverse method
+fdatetime | Add dateTime field
+fbinary | Add binary field
+fmonetary | Add monetary field
+fmany2one | Add many2one field
+fone2many | Add one2Many field
+fmany2many | Add many2Many field
+fcompute | Add compute field
+fcomputei | Add compute field with inverse method
 fonchange | Add onchange field
 fconstrains | Add constrains on field
 create | Add create method
