@@ -123,7 +123,6 @@ chatter | Add chatter
 
 #### XML (`.xml`) - Qweb Special
 
-##### Prefixed with `t-`
 Prefix | Description
 ------------ | -------------
 t-if | Add if condition
