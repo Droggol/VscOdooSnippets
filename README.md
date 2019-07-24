@@ -32,7 +32,7 @@ Press `Ctrl+P` or `Command+P` (for Mac). Paste command `ext install jigar-patel.
 
 ## How to use?
 
-All snippets prefixed with `oo`. For example if you want to add `create` CRUD method then type `oocreate`.
+Most snippets prefixed with `oo`. For example if you want to add `create` CRUD method then type `oocreate`.
 
 #### Detailed documentation available [here](DOCUMENTATION.md).
 

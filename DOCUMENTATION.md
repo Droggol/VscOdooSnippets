@@ -1,9 +1,8 @@
 ## Snippets
 
-All snippets prefixed with `oo`.
-
 #### Python (`.py`)
 
+##### Prefixed with `oo`
 Prefix | Description
 ------------ | -------------
 manifest | Add manifest json
@@ -32,6 +31,7 @@ unlink | Add unlink method
 
 #### Javascript (`.js`)
 
+##### Prefixed with `oo`
 Prefix | Description
 ------------ | -------------
 define | Defining a module
@@ -45,6 +45,7 @@ super | Add super statement
 
 #### XML (`.xml`)
 
+##### Prefixed with `oo`
 Prefix | Description
 ------------ | -------------
 namespace | Add Odoo namespace
@@ -81,3 +82,17 @@ script | Add script tag
 link | Add link tag to include stylesheet
 field | Add field tag
 chatter | Add chatter
+
+#### XML (`.xml`) - Qweb Special
+
+##### Prefixed with `t-`
+Prefix | Description
+------------ | -------------
+t-if | Add if condition
+t-if-else | Add if-else condition
+t-foreach | Add foreach loop
+t-set | Add variable
+t-att | Add attribute
+t-attf | Add attribute with format value
+t-esc | Evaluate expression
+t-raw | Evaluate html content

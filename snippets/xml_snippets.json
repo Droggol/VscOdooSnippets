@@ -439,5 +439,71 @@
             "</div>"
         ],
         "description": "Add chatter"
+    },
+    "t-if": {
+        "prefix": "t-if",
+        "body": [
+            "<t t-if=\"${1:condition}\">",
+            "\t$0",
+            "</t>"
+        ],
+        "description": "Add if condition"
+    },
+    "t-if-else": {
+        "prefix": "t-if",
+        "body": [
+            "<t t-if=\"${1:condition}\">",
+            "\t$0",
+            "</t>",
+            "<t t-elif=\"${2:condition}\">",
+            "</t>",
+            "<t t-else=\"\">",
+            "</t>"
+        ],
+        "description": "Add if-else condition"
+    },
+    "t-foreach": {
+        "prefix": "t-foreach",
+        "body": [
+            "<t t-foreach=\"${1:iteration}\" t-as=\"${2:variable}\">",
+            "\t$0",
+            "</t>"
+        ],
+        "description": "Add foreach loop"
+    },
+    "t-set": {
+        "prefix": "t-set",
+        "body": [
+            "<t t-set=\"${1:variable}\" t-value=\"${2:value}\"/>"
+        ],
+        "description": "Add variable"
+    },
+    "t-att": {
+        "prefix": "t-att",
+        "body": [
+            "t-att-${1:attribute_name}=\"${0:value}\""
+        ],
+        "description": "Add attribute"
+    },
+    "t-attf": {
+        "prefix": "t-att",
+        "body": [
+            "t-attf-${1:attribute_name}=\"${0:value}\""
+        ],
+        "description": "Add attribute with format value"
+    },
+    "t-esc": {
+        "prefix": "t-esc",
+        "body": [
+            "<t t-esc=\"${0:expression}\"/>"
+        ],
+        "description": "Evaluate expression"
+    },
+    "t-raw": {
+        "prefix": "t-raw",
+        "body": [
+            "<t t-raw=\"${0:variable}\"/>"
+        ],
+        "description": "Evaluate html content"
     }
 }
