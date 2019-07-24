@@ -1,6 +1,27 @@
 # Changelog
 All notable changes to this visual studio code extension will be documented in this file.
 
+## [0.0.6](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.6) - 2019-07-24
+### Added
+- New snippet "Add a self-closing field tag" for xml. [PR #17](https://github.com/jat-odoo/VscOdooSnippets/pull/17) by [@Yajo](https://github.com/Yajo) Thank you!
+- New snippet "Add if condition" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Add if-else condition" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Add foreach loop" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Add variable" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Add attribute" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Add attribute with format value" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Evaluate expression" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- New snippet "Evaluate html content" for xml. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+
+### Changed
+- Better tabindex for 'Add field tag' snippet which allow to add attribute. [PR #17](https://github.com/jat-odoo/VscOdooSnippets/pull/17) by [@Yajo](https://github.com/Yajo) Thank you again!
+- Better wording for snippets description. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+- Documentation on README page. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+
+### Fixed
+- Add missing inverse_name parameter for one2many field. [PR #15](https://github.com/jat-odoo/VscOdooSnippets/pull/15) by [@dhp-odoo](https://github.com/dhp-odoo) Thank you!
+- Wrong decorator for onchange. [PR #18](https://github.com/jat-odoo/VscOdooSnippets/pull/18)
+
 ## [0.0.5](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.5) - 2019-07-11
 ### Added
 - New snippet "Add action for v13" for xml. [PR #14](https://github.com/jat-odoo/VscOdooSnippets/pull/14)
