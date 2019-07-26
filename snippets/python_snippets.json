@@ -4,7 +4,7 @@
         "body": [
             "{",
             "\t'name': '${1}',",
-            "\t'version': '${2:1.0}'",
+            "\t'version': '${2:1.0}',",
             "\t'description': '${3}',",
             "\t'summary': '${4}',",
             "\t'author': '${5}',",
