@@ -292,6 +292,18 @@
         ],
         "description": "Add action for v13"
     },
+    "Action view": {
+        "prefix": "ooaction_view",
+        "body": [
+            "<record id=\"action_${1:action_view_name}\" model=\"ir.actions.act_window.view\">",
+            "\t<field name=\"sequence\" eval=\"${2:1}\"/>",
+            "\t<field name=\"view_mode\">${3:view_name}</field>",
+            "\t<field name=\"act_window_id\" ref=\"${4:action_id}\"/>",
+            "\t<field name=\"view_id\" ref=\"${5:view_id}\"/>",
+            "</record>"
+        ],
+        "description": "Add view in action"
+    },
     "Server action": {
         "prefix": "ooserver_action",
         "body": [

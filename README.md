@@ -106,6 +106,7 @@ report_template | Add report template
 xpath | Add xpath
 xpath_attr | Add xpath to attributes
 action | Add action
+action_view | Add view in action
 server_action | Add server action
 url_action | Add URL action
 client_action | Add client action
