@@ -140,6 +140,11 @@ If you'd like to report an issue or help contribute to this visual studio code e
 - [Repository](https://github.com/jat-odoo/VscOdooSnippets)
 - [Issues](https://github.com/jat-odoo/VscOdooSnippets/issues)
 
+#### Thanks to all the people who already contributed!
+<a href="https://github.com/jat-odoo/VscOdooSnippets/graphs/contributors">
+    <img src="https://contributors-img.firebaseapp.com/image?repo=jat-odoo/VscOdooSnippets"/>
+</a>
+
 ## Release Notes
 
 Detailed release notes are available [here](CHANGELOG.md).
