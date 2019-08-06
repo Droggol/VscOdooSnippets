@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.7](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.7) - 2019-08-06
+### Added
+- [#21](https://github.com/jat-odoo/VscOdooSnippets/pull/21) - New snippet "Add view in action" for xml. (Thanks [@MohitGhodasara](https://github.com/MohitGhodasara))
+
+### Changed
+- [#20](https://github.com/jat-odoo/VscOdooSnippets/pull/20) - Improve Changelog and show contributors with avatar in README.
+
+### Fixed
+- [#19](https://github.com/jat-odoo/VscOdooSnippets/pull/19) - Add missing comma in manifest. (Thanks [@pga-odoo](https://github.com/pga-odoo))
+
 ## [0.0.6](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.6) - 2019-07-24
 ### Added
 - [#17](https://github.com/jat-odoo/VscOdooSnippets/pull/17) - New snippet "Add a self-closing field tag" for xml. (Thanks [@Yajo](https://github.com/Yajo))

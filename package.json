@@ -2,7 +2,7 @@
     "name": "OdooSnippets",
     "displayName": "Odoo Snippets",
     "description": "Snippets for Odoo developer",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "icon": "images/icon.png",
     "publisher": "jigar-patel",
     "engines": {
