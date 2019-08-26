@@ -423,7 +423,7 @@
     "Link tag": {
         "prefix": "oolink",
         "body": [
-            "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.css\"/>"
+            "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.scss\"/>"
         ],
         "description": "Add link tag to include stylesheet"
     },
