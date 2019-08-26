@@ -377,8 +377,7 @@
             "<menuitem",
             "\tid=\"${1:model_name}_menu\"",
             "\tname=\"${2:name}\"",
-            "\twebicon=\"${3:path}\"",
-            "\tsequence=\"${4:10}\"/>"
+            "\tsequence=\"${3:10}\"/>"
         ],
         "description": "Add root menu"
     },
