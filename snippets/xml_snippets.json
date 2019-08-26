@@ -516,5 +516,26 @@
             "<t t-raw=\"${0:variable}\"/>"
         ],
         "description": "Evaluate html content"
+    },
+    "t-call": {
+        "prefix": "t-call",
+        "body": [
+            "<t t-call=\"${0:template_name}\"/>"
+        ],
+        "description": "Call other template"
+    },
+    "t-debug": {
+        "prefix": "t-debug",
+        "body": [
+            "<t t-debug=\"${0:pdb}\"/>"
+        ],
+        "description": "Invokes a debugger"
+    },
+    "t-log": {
+        "prefix": "t-log",
+        "body": [
+            "<t t-log=\"${0:expression}\"/>"
+        ],
+        "description": "Log the expression result"
     }
 }
