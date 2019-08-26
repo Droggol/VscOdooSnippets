@@ -26,7 +26,8 @@
             "from odoo import _, api, fields, models",
             "class ${1:ModuleName}(models.${2|Model,AbstractModel,TransientModel|}):",
             "\t_name = '${3:module.name}'",
-            "\t_inherit = '${4:module.name}'"
+            "\t_description = '${4:description}'",
+            "\t_inherit = '${5:module.name}'"
         ],
         "description": "Add model"
     },
