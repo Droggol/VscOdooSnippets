@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.0.8](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.8) - 2019-08-27
+### Added
+- [#23](https://github.com/jat-odoo/VscOdooSnippets/pull/23) - New snippet "Call other template" for xml.
+- [#23](https://github.com/jat-odoo/VscOdooSnippets/pull/23) - New snippet "Invokes a debugger" for xml.
+- [#23](https://github.com/jat-odoo/VscOdooSnippets/pull/23) - New snippet "Log the expression result" for xml.
+- [#23](https://github.com/jat-odoo/VscOdooSnippets/pull/23) - New snippet "Add an import" for py.
+
+### Changed
+- [#22](https://github.com/jat-odoo/VscOdooSnippets/pull/22) - Add _description attribute in Model snippet
+
+### Fixed
+- [#22](https://github.com/jat-odoo/VscOdooSnippets/pull/22) - Call super properly.
+- [#22](https://github.com/jat-odoo/VscOdooSnippets/pull/22) - Use correct file extension for Link tag snippet.
+- [#22](https://github.com/jat-odoo/VscOdooSnippets/pull/22) - Allow to open a form view in Action snippets.
+- [#22](https://github.com/jat-odoo/VscOdooSnippets/pull/22) - Remove webicon attribute from Root menu snippet.
+
 ## [0.0.7](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.7) - 2019-08-06
 ### Added
 - [#21](https://github.com/jat-odoo/VscOdooSnippets/pull/21) - New snippet "Add view in action" for xml. (Thanks [@MohitGhodasara](https://github.com/MohitGhodasara))
