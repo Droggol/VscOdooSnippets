@@ -44,6 +44,7 @@ Most snippets prefixed with `oo`. For example if you want to add `create` CRUD m
 Prefix | Description
 ------------ | -------------
 manifest | Add manifest json
+import | Add an import
 model | Add model
 fchar | Add char field
 ftext | Add text field
