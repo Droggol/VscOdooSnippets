@@ -259,7 +259,7 @@
         ],
         "description": "Add xpath to attributes"
     },
-    "Action (v12 or older)": {
+    "Action (v12 and older)": {
         "prefix": "ooaction",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
@@ -274,7 +274,7 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add action for v12 or older"
+        "description": "Add action for v12 and older"
     },
     "Action (v13)": {
         "prefix": "ooaction",
