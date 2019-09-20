@@ -87,7 +87,7 @@
         "prefix": "ooalert",
         "body": [
             "Dialog.alert(this, _t(\"${1:message}\"), {",
-            "\ttitle: _t('${2:title}'),",
+            "\ttitle: _t(\"${2:title}\"),",
             "\tconfirm_callback: function () {",
             "\t\t${0}",
             "\t},",
@@ -99,7 +99,7 @@
         "prefix": "ooconfirm",
         "body": [
             "Dialog.confirm(this, _t(\"${1:message}\"), {",
-            "\ttitle: _t('${2:title}'),",
+            "\ttitle: _t(\"${2:title}\"),",
             "\tconfirm_callback: function () {",
             "\t\t${0}",
             "\t},",
