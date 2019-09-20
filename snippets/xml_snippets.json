@@ -451,6 +451,24 @@
         ],
         "description": "Add chatter"
     },
+    "Notebook": {
+        "prefix": "oonotebook",
+        "body": [
+            "<notebook>",
+            "\t$0",
+            "</notebook>"
+        ],
+        "description": "Add a notebook"
+    },
+    "Page": {
+        "prefix": "oopage",
+        "body": [
+            "<page name=\"${1:name}\" string=\"${2:string}\">",
+            "\t$0",
+            "</page>"
+        ],
+        "description": "Add a notebook page"
+    },
     "t-if": {
         "prefix": "t-if",
         "body": [
