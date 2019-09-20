@@ -122,6 +122,8 @@ script | Add script tag
 link | Add link tag to include stylesheet
 field | Add field tag
 chatter | Add chatter
+notebook | Add a notebook
+page | Add a notebook page
 
 #### XML (`.xml`) - Qweb Special
 
