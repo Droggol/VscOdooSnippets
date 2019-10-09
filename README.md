@@ -75,12 +75,12 @@ Prefix | Description
 ------------ | -------------
 define | Defining a module
 widget | Add widget
+super | Add super statement
+rpc | Add rpc call
+rpc_route | Add route rpc call
 dialog | Add dialog widget
 alert | Add alert dialog
 confirm | Add confirm dialog
-rpc | Add rpc call
-rpc_route | Add route rpc call
-super | Add super statement
 
 #### XML (`.xml`)
 
@@ -88,6 +88,8 @@ super | Add super statement
 Prefix | Description
 ------------ | -------------
 namespace | Add Odoo namespace
+menu_root | Add root menu
+menu_sub | Add sub menu
 form | Add form view
 list | Add list view
 kanban | Add kanban view
@@ -102,28 +104,26 @@ qweb | Add qweb view
 button_header | Add button in form view header
 button_box | Add stat button(s) container in form view
 button_stat | Add stat button in form view
-report | Add report action
-report_template | Add report template
-xpath | Add xpath
-xpath_attr | Add xpath to attributes
+field | Add field tag
+notebook | Add a notebook
+page | Add a notebook page
+chatter | Add chatter
 action | Add action
 action_view | Add view in action
 server_action | Add server action
 url_action | Add URL action
 client_action | Add client action
+report | Add report action
+report_template | Add report template
 cron | Add cron job
 record | Add record
 function | Add function
-menu_root | Add root menu
-menu_sub | Add sub menu
 template | Add template
 templatei | Add template inherit
+xpath | Add xpath
+xpath_attr | Add xpath to attributes
 script | Add script tag
 link | Add link tag to include stylesheet
-field | Add field tag
-chatter | Add chatter
-notebook | Add a notebook
-page | Add a notebook page
 
 #### XML (`.xml`) - Qweb Special
 

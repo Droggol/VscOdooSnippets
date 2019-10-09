@@ -42,6 +42,41 @@
         ],
         "description": "Add widget"
     },
+    "Call super": {
+        "prefix": "oosuper",
+        "body": [
+            "this._super.apply(this, arguments);"
+        ],
+        "description": "Add super statement"
+    },
+    "Rpc": {
+        "prefix": "oorpc",
+        "body": [
+            "return this._rpc({",
+            "\tmodel: '${1:model_name}',",
+            "\tmethod: '${2:method_name}',",
+            "\targs: [${3}]",
+            "\tcontext: {${4}}",
+            "}).then(function (result) {",
+            "\t${0}",
+            "});"
+        ],
+        "description": "Add rpc call"
+    },
+    "Rpc route": {
+        "prefix": "oorpc_route",
+        "body": [
+            "return this._rpc({",
+            "\troute: '${1:url}',",
+            "\tparams: {",
+            "\t\t${2:params}",
+            "\t}",
+            "}).then(function (result) {",
+            "\t${0}",
+            "});"
+        ],
+        "description": "Add route rpc call"
+    },
     "Dialog": {
         "prefix": "oodialog",
         "body": [
@@ -109,40 +144,5 @@
             "});"
         ],
         "description": "Add confirm dialog"
-    },
-    "Rpc": {
-        "prefix": "oorpc",
-        "body": [
-            "return this._rpc({",
-            "\tmodel: '${1:model_name}',",
-            "\tmethod: '${2:method_name}',",
-            "\targs: [${3}]",
-            "\tcontext: {${4}}",
-            "}).then(function (result) {",
-            "\t${0}",
-            "});"
-        ],
-        "description": "Add rpc call"
-    },
-    "Rpc route": {
-        "prefix": "oorpc_route",
-        "body": [
-            "return this._rpc({",
-            "\troute: '${1:url}',",
-            "\tparams: {",
-            "\t\t${2:params}",
-            "\t}",
-            "}).then(function (result) {",
-            "\t${0}",
-            "});"
-        ],
-        "description": "Add route rpc call"
-    },
-    "Call super": {
-        "prefix": "oosuper",
-        "body": [
-            "this._super.apply(this, arguments);"
-        ],
-        "description": "Add super statement"
     }
 }
