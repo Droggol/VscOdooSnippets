@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.9](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.9) - 2019-10-09
+### Added
+- [#25](https://github.com/jat-odoo/VscOdooSnippets/pull/25) - New snippet "Add a notebook" for xml.
+- [#25](https://github.com/jat-odoo/VscOdooSnippets/pull/25) - New snippet "Add a notebook page" for xml.
+
+### Fixed
+- [#24](https://github.com/jat-odoo/VscOdooSnippets/pull/24) - Add missing 'Add an import' snippet doc.
+- [#24](https://github.com/jat-odoo/VscOdooSnippets/pull/24) - Should not have a tab in 'use strict'.
+- [#24](https://github.com/jat-odoo/VscOdooSnippets/pull/24) - Translatable string should be in double quote according to Odoo guidelines.
+
 ## [0.0.8](https://github.com/jat-odoo/VscOdooSnippets/releases/tag/v0.0.8) - 2019-08-27
 ### Added
 - [#23](https://github.com/jat-odoo/VscOdooSnippets/pull/23) - New snippet "Call other template" for xml.
