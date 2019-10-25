@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=jigar-patel.OdooSnippets">
-        <img src="https://raw.githubusercontent.com/jat-odoo/VscOdooSnippets/master/images/icon.png"/>
+        <img src="https://raw.githubusercontent.com/droggol/VscOdooSnippets/master/images/icon.png"/>
     </a>
     <div>Odoo Snippets</div>
     <div style="margin: 0.3em auto;">
@@ -34,7 +34,7 @@ Press `Ctrl+P` or `Command+P` (for Mac). Paste command `ext install jigar-patel.
 
 Most snippets prefixed with `oo`. For example if you want to add `create` CRUD method then type `oocreate`.
 
-<img src="https://raw.githubusercontent.com/jat-odoo/VscOdooSnippets/master/images/demo.gif" width="624" height="544"/>
+<img src="https://raw.githubusercontent.com/droggol/VscOdooSnippets/master/images/demo.gif" width="624" height="544"/>
 
 ## Documentation
 
@@ -144,12 +144,12 @@ t-log | Log the expression result
 ## Contributing
 If you'd like to report an issue or help contribute to this visual studio code extension, please visit the repository on Github.
 
-- [Repository](https://github.com/jat-odoo/VscOdooSnippets)
-- [Issues](https://github.com/jat-odoo/VscOdooSnippets/issues)
+- [Repository](https://github.com/droggol/VscOdooSnippets)
+- [Issues](https://github.com/droggol/VscOdooSnippets/issues)
 
 #### Thanks to all the people who already contributed!
-<a href="https://github.com/jat-odoo/VscOdooSnippets/graphs/contributors">
-    <img src="https://contributors-img.firebaseapp.com/image?repo=jat-odoo/VscOdooSnippets"/>
+<a href="https://github.com/droggol/VscOdooSnippets/graphs/contributors">
+    <img src="https://contributors-img.firebaseapp.com/image?repo=droggol/VscOdooSnippets"/>
 </a>
 
 ## Release Notes
@@ -159,3 +159,7 @@ Detailed release notes are available [here](CHANGELOG.md).
 ## License
 
 Code licensed under [MIT](LICENSE).
+
+<a href="https://www.droggol.com">
+    <img src="https://raw.githubusercontent.com/droggol/VscOdooSnippets/master/images/droggol_logo.png" width="128" height="56"/>
+</a>
