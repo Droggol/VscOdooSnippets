@@ -208,5 +208,10 @@
             "\treturn super().unlink()"
         ],
         "description": "Add unlink method"
+    },
+    "from . import ...": {
+        "prefix": "oofim",
+        "body": "from . import ${1:names}$0",
+        "description" : "Add import from __init__"
     }
 }
