@@ -67,6 +67,7 @@ fconstrains | Add constrains on field
 create | Add create method
 write | Add write method
 unlink | Add unlink method
+fim | Add import from
 
 #### Javascript (`.js`)
 
