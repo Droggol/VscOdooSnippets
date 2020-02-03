@@ -7,7 +7,8 @@
             "",
             "\t${0}",
             "",
-            "</odoo>"
+            "</odoo>",
+            ""
         ],
         "description": "Add Odoo namespace"
     },
