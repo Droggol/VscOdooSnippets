@@ -19,6 +19,10 @@
     "keywords": [
         "odoo", "snippets", "python", "xml", "javascript"
     ],
+    "main": "extension.js",
+    "activationEvents": [
+        "*"
+    ],
     "contributes": {
         "snippets": [
             {
