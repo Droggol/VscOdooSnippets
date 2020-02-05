@@ -28,7 +28,7 @@ All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/12.
 
 ## Installation
 
-Press `Ctrl+P` or `Command+P` (for Mac). Paste command `ext install jigar-patel.OdooSnippets` and press `Enter`.
+Launch VS Code. Press `Ctrl+P` or `Command+P` (for Mac). Paste command `ext install jigar-patel.OdooSnippets` and press `Enter`.
 
 ## How to use?
 
@@ -41,7 +41,7 @@ Most snippets prefixed with `oo`. For example if you want to add `create` CRUD m
 #### Python (`.py`)
 
 ##### Prefixed with `oo`
-Prefix | Description
+Prefix | Purpose
 ------------ | -------------
 manifest | Add manifest json
 import | Add an import
@@ -53,13 +53,13 @@ fboolean | Add boolean field
 finteger | Add integer field
 ffloat | Add float field
 fselection | Add selection field
-fdate | Add Date field
+fdate | Add date field
 fdatetime | Add dateTime field
 fbinary | Add binary field
 fmonetary | Add monetary field
 fmany2one | Add many2one field
-fone2many | Add one2Many field
-fmany2many | Add many2Many field
+fone2many | Add one2many field
+fmany2many | Add many2many field
 fcompute | Add compute field
 fcomputei | Add compute field with inverse method
 fonchange | Add onchange field
@@ -72,7 +72,7 @@ fim | Add import from
 #### Javascript (`.js`)
 
 ##### Prefixed with `oo`
-Prefix | Description
+Prefix | Purpose
 ------------ | -------------
 define | Defining a module
 widget | Add widget
@@ -85,7 +85,7 @@ confirm | Add confirm dialog
 
 #### XML (`.xml`)
 
-Prefix | Description
+Prefix | Purpose
 ------------ | -------------
 `<odoo>` | Add Odoo namespace
 `<menuitem>` | Add root menu
@@ -102,13 +102,13 @@ Prefix | Description
 `<activity>` | Add activity view
 `<qweb>` | Add qweb view
 `<buttonHeader>` | Add button in form view header
-`<buttonBox>` | Add stat button(s) container in form view
+`<buttonBox>` | Add stat button container in form view
 `<buttonStat>` | Add stat button in form view
 `<field>` | Add field tag
 `<notebook>` | Add a notebook
 `<page>` | Add a notebook page
 `<chatter>` | Add chatter
-`<action>` | Add action
+`<action>` | Add an action
 `<actionView>` | Add view in action
 `<actionServer>` | Add server action
 `<actionUrl>` | Add URL action
@@ -119,27 +119,27 @@ Prefix | Description
 `<record>` | Add record
 `<function>` | Add function
 `<template>` | Add template
-`<templateInherit>` | Add template inherit
+`<templateInherit>` | Add inherited template
 `<xpath>` | Add xpath
 `<xpathAttr>` | Add xpath to attributes
 `<script>` | Add script tag
-`<link>` | Add link tag to include stylesheet
+`<link>` | Add link tag
 
-#### XML (`.xml`) - Qweb Special
+#### Qweb
 
-Prefix | Description
+Prefix | Purpose
 ------------ | -------------
-t-if | Add if condition
-t-if-else | Add if-else condition
-t-foreach | Add foreach loop
-t-set | Add variable
-t-att | Add attribute
-t-attf | Add attribute with format value
-t-esc | Evaluate expression
-t-raw | Evaluate html content
-t-call | Call other template
-t-debug | Invokes a debugger
-t-log | Log the expression result
+`t-if` | Add if condition
+`t-if-else` | Add if-else condition
+`t-foreach` | Add foreach loop
+`t-set` | Add variable
+`t-att` | Add attribute
+`t-attf` | Add attribute with format value
+`t-esc` | Evaluate expression
+`t-raw` | Evaluate html content
+`t-call` | Call other template
+`t-debug` | Invokes a debugger
+`t-log` | Log the expression result
 
 ## Contributing
 If you'd like to report an issue or help contribute to this visual studio code extension, please visit the repository on Github.
