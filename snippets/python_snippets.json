@@ -26,7 +26,8 @@
             "# -*- coding: utf-8 -*-",
             "\nimport logging",
             "\nfrom odoo import _, api, fields, models",
-            "\n_logger = logging.getLogger(__name__)"
+            "\n_logger = logging.getLogger(__name__)",
+            "\n"
         ],
         "description": "Add an import"
     },
@@ -36,7 +37,7 @@
             "class ${1:ModuleName}(models.${2|Model,AbstractModel,TransientModel|}):",
             "\t_name = '${3:module.name}'",
             "\t_description = '${4:description}'",
-            "\t_inherit = '${5:module.name}'"
+            "\n\t"
         ],
         "description": "Add model"
     },
