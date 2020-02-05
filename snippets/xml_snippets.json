@@ -1,6 +1,6 @@
 {
     "Namespace": {
-        "prefix": "oonamespace",
+        "prefix": "<odoo>",
         "body": [
             "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
             "<odoo>",
@@ -13,7 +13,7 @@
         "description": "Add Odoo namespace"
     },
     "Root menu": {
-        "prefix": "oomenu_root",
+        "prefix": "<menuitem>",
         "body": [
             "<menuitem",
             "\tid=\"${1:model_name}_menu\"",
@@ -23,7 +23,7 @@
         "description": "Add root menu"
     },
     "Sub menu": {
-        "prefix": "oomenu_sub",
+        "prefix": "<menuitem>",
         "body": [
             "<menuitem",
             "\tid=\"${1:model_name}_menu\"",
@@ -36,7 +36,7 @@
         "description": "Add sub menu"
     },
     "Form view": {
-        "prefix": "ooform",
+        "prefix": "<form>",
         "body": [
             "<record id=\"${1:model_name}_view_form\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.form</field>",
@@ -55,7 +55,7 @@
         "description": "Add form view"
     },
     "List view": {
-        "prefix": "oolist",
+        "prefix": "<list>",
         "body": [
             "<record id=\"${1:model_name}_view_tree\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.tree</field>",
@@ -70,7 +70,7 @@
         "description": "Add list view"
     },
     "Kanban view": {
-        "prefix": "ookanban",
+        "prefix": "<kanban>",
         "body": [
             "<record id=\"${1:model_name}_view_kanban\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.kanban</field>",
@@ -89,7 +89,7 @@
         "description": "Add kanban view"
     },
     "Search view": {
-        "prefix": "oosearch",
+        "prefix": "<search>",
         "body": [
             "<record id=\"${1:model_name}_view_search\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.search</field>",
@@ -104,7 +104,7 @@
         "description": "Add search view"
     },
     "Calendar view": {
-        "prefix": "oocalendar",
+        "prefix": "<calendar>",
         "body": [
             "<record id=\"${1:model_name}_view_calendar\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.calendar</field>",
@@ -119,7 +119,7 @@
         "description": "Add calendar view"
     },
     "Cohort view": {
-        "prefix": "oocohort",
+        "prefix": "<cohort>",
         "body": [
             "<record id=\"${1:model_name}_view_cohort\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.cohort</field>",
@@ -133,7 +133,7 @@
         "description": "Add cohort view"
     },
     "Gantt view": {
-        "prefix": "oogantt",
+        "prefix": "<gantt>",
         "body": [
             "<record id=\"${1:model_name}_view_gantt\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.gantt</field>",
@@ -147,7 +147,7 @@
         "description": "Add gantt view"
     },
     "Graph view": {
-        "prefix": "oograph",
+        "prefix": "<graph>",
         "body": [
             "<record id=\"${1:model_name}_view_graph\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.graph</field>",
@@ -162,7 +162,7 @@
         "description": "Add graph view"
     },
     "Pivot view": {
-        "prefix": "oopivot",
+        "prefix": "<pivot>",
         "body": [
             "<record id=\"${1:model_name}_view_pivot\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.pivot</field>",
@@ -177,7 +177,7 @@
         "description": "Add pivot view"
     },
     "Activity view": {
-        "prefix": "ooactivity",
+        "prefix": "<activity>",
         "body": [
             "<record id=\"${1:model_name}_view_activity\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.activity</field>",
@@ -196,7 +196,7 @@
         "description": "Add activity view"
     },
     "Qweb view": {
-        "prefix": "ooqweb",
+        "prefix": "<qweb>",
         "body": [
             "<record id=\"${1:model_name}_view_qweb\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:model.name}.view.qweb</field>",
@@ -210,14 +210,14 @@
         "description": "Add qweb view"
     },
     "Header button": {
-        "prefix": "oobutton_header",
+        "prefix": "<buttonHeader>",
         "body": [
             "<button string=\"${1}\" name=\"${2:action_name}\" type=\"${3|object,action|}\" class=\"oe_highlight\"/>"
         ],
         "description": "Add button in form view header"
     },
     "Button box": {
-        "prefix": "oobutton_box",
+        "prefix": "<buttonBox>",
         "body": [
             "<div class=\"oe_button_box\" name=\"button_box\">",
             "\t${0}",
@@ -226,7 +226,7 @@
         "description": "Add stat button(s) container in form view"
     },
     "Stat button": {
-        "prefix": "oobutton_stat",
+        "prefix": "<buttonStat>",
         "body": [
             "<button name=\"${1:action_name}\" type=\"${2|object,action|}\" class=\"oe_stat_button\" icon=\"fa-${3}\">",
             "\t<field name=\"${4:field_name}\" string=\"${5}\" widget=\"statinfo\"/>",
@@ -235,21 +235,21 @@
         "description": "Add stat button in form view"
     },
     "Self-closing field tag": {
-        "prefix": "oofield",
+        "prefix": "<field>",
         "body": [
             "<field name=\"${1}\"${2}/>${0}"
         ],
         "description": "Add a self-closing field tag"
     },
     "Field tag": {
-        "prefix": "oofield",
+        "prefix": "<field>",
         "body": [
             "<field name=\"${1}\"${2}>${3}</field>${0}"
         ],
         "description": "Add field tag"
     },
     "Notebook": {
-        "prefix": "oonotebook",
+        "prefix": "<notebook>",
         "body": [
             "<notebook>",
             "\t$0",
@@ -258,7 +258,7 @@
         "description": "Add a notebook"
     },
     "Page": {
-        "prefix": "oopage",
+        "prefix": "<page>",
         "body": [
             "<page name=\"${1:name}\" string=\"${2:string}\">",
             "\t$0",
@@ -267,7 +267,7 @@
         "description": "Add a notebook page"
     },
     "Chatter": {
-        "prefix": "oochatter",
+        "prefix": "<chatter>",
         "body": [
             "<div class=\"oe_chatter\">",
             "\t<field name=\"message_follower_ids\" widget=\"mail_followers\"/>",
@@ -278,7 +278,7 @@
         "description": "Add chatter"
     },
     "Action (v12 and older)": {
-        "prefix": "ooaction",
+        "prefix": "<action>",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
             "\t<field name=\"name\">${2:Action Name}</field>",
@@ -295,7 +295,7 @@
         "description": "Add action for v12 and older"
     },
     "Action (v13)": {
-        "prefix": "ooaction",
+        "prefix": "<action>",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
             "\t<field name=\"name\">${2:Action Name}</field>",
@@ -311,7 +311,7 @@
         "description": "Add action for v13"
     },
     "Action view": {
-        "prefix": "ooaction_view",
+        "prefix": "<actionView>",
         "body": [
             "<record id=\"action_${1:action_view_name}\" model=\"ir.actions.act_window.view\">",
             "\t<field name=\"sequence\" eval=\"${2:1}\"/>",
@@ -323,7 +323,7 @@
         "description": "Add view in action"
     },
     "Server action": {
-        "prefix": "ooserver_action",
+        "prefix": "<actionServer>",
         "body": [
             "<record id=\"${1:model_name}_action_server\" model=\"ir.actions.server\">",
             "\t<field name=\"name\">${2:Action Name}</field>",
@@ -336,7 +336,7 @@
         "description": "Add server action"
     },
     "URL action": {
-        "prefix": "oourl_action",
+        "prefix": "<actionUrl>",
         "body": [
             "<record id=\"action_${1:action_name}\" model=\"ir.actions.act_url\">",
             "\t<field name=\"name\">${2:Action Name}</field>",
@@ -347,7 +347,7 @@
         "description": "Add URL action"
     },
     "Client action": {
-        "prefix": "ooclient_action",
+        "prefix": "<actionClient>",
         "body": [
             "<record id=\"action_${1:action_name}\" model=\"ir.actions.client\">",
             "\t<field name=\"name\">${2:Action Name}</field>",
@@ -358,7 +358,7 @@
         "description": "Add client action"
     },
     "Report action": {
-        "prefix": "ooreport",
+        "prefix": "<actionReport>",
         "body": [
             "<report",
             "\tid=\"action_report_${1:model_name}\"",
@@ -372,7 +372,7 @@
         "description": "Add report action"
     },
     "Report template": {
-        "prefix": "ooreport_template",
+        "prefix": "<report>",
         "body": [
             "<template id=\"${1:report_template_name}\">",
             "\t<t t-call=\"web.html_container\">",
@@ -389,7 +389,7 @@
         "description": "Add report template"
     },
     "Cron job": {
-        "prefix": "oocron",
+        "prefix": "<cron>",
         "body": [
             "<record id=\"${1:model_name}_cron\" model=\"ir.cron\">",
             "\t<field name=\"name\">${2:Cron Name}</field>",
@@ -404,7 +404,7 @@
         "description": "Add cron job"
     },
     "Record": {
-        "prefix": "oorecord",
+        "prefix": "<record>",
         "body": [
             "<record id=\"${1:record_name}\" model=\"${2:model_name}\">",
             "\t<field name=\"${3:field_name}\">${4:field_value}</field>",
@@ -413,7 +413,7 @@
         "description": "Add record"
     },
     "Function": {
-        "prefix": "oofunction",
+        "prefix": "<function>",
         "body": [
             "<function model=\"${1:model.name}\" name=\"${2:method_name}\" eval=\"[ref('${3:record_id}')]\">",
             "</function>"
@@ -421,7 +421,7 @@
         "description": "Add function"
     },
     "Template": {
-        "prefix": "ootemplate",
+        "prefix": "<template>",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${2:template_name}\">",
             "\t${0}",
@@ -430,7 +430,7 @@
         "description": "Add template"
     },
     "Inherit template": {
-        "prefix": "ootemplatei",
+        "prefix": "<templateInherit>",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
             "\t$0",
@@ -439,7 +439,7 @@
         "description": "Add template inherit"
     },
     "Xpath": {
-        "prefix": "ooxpath",
+        "prefix": "<xpath>",
         "body": [
             "<xpath expr=\"${1}\" position=\"${2|inside,after,before,replace,move|}\">",
             "\t$0",
@@ -448,7 +448,7 @@
         "description": "Add xpath"
     },
     "Xpath attributes": {
-        "prefix": "ooxpath_attr",
+        "prefix": "<xpathAttr>",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
             "\t<attribute name=\"${2:attribute}\">${3:attribute_value}</attribute>",
@@ -457,14 +457,14 @@
         "description": "Add xpath to attributes"
     },
     "Script tag": {
-        "prefix": "ooscript",
+        "prefix": "<script>",
         "body": [
             "<script type=\"text/javascript\" src=\"/${1:module_name}/static/src/js/${2:filename}.js\"/>"
         ],
         "description": "Add script tag"
     },
     "Link tag": {
-        "prefix": "oolink",
+        "prefix": "<link>",
         "body": [
             "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.scss\"/>"
         ],

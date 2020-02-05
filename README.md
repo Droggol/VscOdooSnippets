@@ -85,46 +85,45 @@ confirm | Add confirm dialog
 
 #### XML (`.xml`)
 
-##### Prefixed with `oo`
 Prefix | Description
 ------------ | -------------
-namespace | Add Odoo namespace
-menu_root | Add root menu
-menu_sub | Add sub menu
-form | Add form view
-list | Add list view
-kanban | Add kanban view
-search | Add search view
-calendar | Add calendar view
-cohort | Add cohort view
-gantt | Add gantt view
-graph | Add graph view
-pivot | Add pivot view
-activity | Add activity view
-qweb | Add qweb view
-button_header | Add button in form view header
-button_box | Add stat button(s) container in form view
-button_stat | Add stat button in form view
-field | Add field tag
-notebook | Add a notebook
-page | Add a notebook page
-chatter | Add chatter
-action | Add action
-action_view | Add view in action
-server_action | Add server action
-url_action | Add URL action
-client_action | Add client action
-report | Add report action
-report_template | Add report template
-cron | Add cron job
-record | Add record
-function | Add function
-template | Add template
-templatei | Add template inherit
-xpath | Add xpath
-xpath_attr | Add xpath to attributes
-script | Add script tag
-link | Add link tag to include stylesheet
+`<odoo>` | Add Odoo namespace
+`<menuitem>` | Add root menu
+`<menuitem>` | Add sub menu
+`<form>` | Add form view
+`<list>` | Add list view
+`<kanban>` | Add kanban view
+`<search>` | Add search view
+`<calendar>` | Add calendar view
+`<cohort>` | Add cohort view
+`<gantt>` | Add gantt view
+`<graph>` | Add graph view
+`<pivot>` | Add pivot view
+`<activity>` | Add activity view
+`<qweb>` | Add qweb view
+`<buttonHeader>` | Add button in form view header
+`<buttonBox>` | Add stat button(s) container in form view
+`<buttonStat>` | Add stat button in form view
+`<field>` | Add field tag
+`<notebook>` | Add a notebook
+`<page>` | Add a notebook page
+`<chatter>` | Add chatter
+`<action>` | Add action
+`<actionView>` | Add view in action
+`<actionServer>` | Add server action
+`<actionUrl>` | Add URL action
+`<actionClient>` | Add client action
+`<actionReport>` | Add report action
+`<report>` | Add report template
+`<cron>` | Add cron job
+`<record>` | Add record
+`<function>` | Add function
+`<template>` | Add template
+`<templateInherit>` | Add template inherit
+`<xpath>` | Add xpath
+`<xpathAttr>` | Add xpath to attributes
+`<script>` | Add script tag
+`<link>` | Add link tag to include stylesheet
 
 #### XML (`.xml`) - Qweb Special
 
