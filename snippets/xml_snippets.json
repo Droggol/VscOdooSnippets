@@ -220,7 +220,9 @@
         "prefix": "<buttonBox>",
         "body": [
             "<div class=\"oe_button_box\" name=\"button_box\">",
-            "\t${0}",
+            "\t<button name=\"${1:action_name}\" type=\"${2|object,action|}\" class=\"oe_stat_button\" icon=\"fa-${3}\">",
+            "\t\t<field name=\"${4:field_name}\" string=\"${5}\" widget=\"statinfo\"/>",
+            "\t</button>",
             "</div>"
         ],
         "description": "Add stat button container in form view"
@@ -237,7 +239,7 @@
     "Self-closing field tag": {
         "prefix": "<field>",
         "body": [
-            "<field name=\"${1}\"${2}/>${0}"
+            "<field name=\"${1}\" ${2}/>${0}"
         ],
         "description": "Add a self-closing field tag"
     },
@@ -252,7 +254,9 @@
         "prefix": "<notebook>",
         "body": [
             "<notebook>",
-            "\t$0",
+            "\t<page name=\"${1:name}\" string=\"${2:string}\">",
+            "\t\t$0",
+            "\t</page>",
             "</notebook>"
         ],
         "description": "Add a notebook"
@@ -433,7 +437,9 @@
         "prefix": "<templateInherit>",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
-            "\t$0",
+            "\t<xpath expr=\"${4}\" position=\"${5|inside,after,before,replace,move|}\">",
+            "\t\t$0",
+            "\t</xpath>",
             "</template>"
         ],
         "description": "Add inherited template"
