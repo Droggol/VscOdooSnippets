@@ -223,7 +223,7 @@
             "\t${0}",
             "</div>"
         ],
-        "description": "Add stat button(s) container in form view"
+        "description": "Add stat button container in form view"
     },
     "Stat button": {
         "prefix": "<buttonStat>",
@@ -292,7 +292,7 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add action for v12 and older"
+        "description": "Add an action"
     },
     "Action (v13)": {
         "prefix": "<action>",
@@ -308,7 +308,7 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add action for v13"
+        "description": "Add an action"
     },
     "Action view": {
         "prefix": "<actionView>",
@@ -436,7 +436,7 @@
             "\t$0",
             "</template>"
         ],
-        "description": "Add template inherit"
+        "description": "Add inherited template"
     },
     "Xpath": {
         "prefix": "<xpath>",
@@ -468,7 +468,7 @@
         "body": [
             "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.scss\"/>"
         ],
-        "description": "Add link tag to include stylesheet"
+        "description": "Add link tag"
     },
     "t-if": {
         "prefix": "t-if",
