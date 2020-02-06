@@ -24,7 +24,7 @@ This extension contains predefined code snippets for [Odoo](https://www.odoo.com
 * Javascript (`.js`)
 * XML (`.xml`)
 
-All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/12.0/reference/guidelines.html).
+All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/13.0/reference/guidelines.html).
 
 ## Installation
 
