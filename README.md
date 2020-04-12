@@ -45,6 +45,7 @@ Prefix | Purpose
 ------------ | -------------
 manifest | Add manifest json
 import | Add an import
+fimport | Add an import from
 model | Add model
 fchar | Add char field
 ftext | Add text field
@@ -67,7 +68,6 @@ fconstrains | Add constrains on field
 create | Add create method
 write | Add write method
 unlink | Add unlink method
-fim | Add import from
 
 #### Javascript (`.js`)
 
