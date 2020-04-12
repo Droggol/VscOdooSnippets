@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.0.0) - 2020-04-12
+### Added
+- [#26](https://github.com/droggol/VscOdooSnippets/pull/26) - New snippet "Add from import" for py.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - New snippet "Add inherit view" for xml.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - New snippet "Add backend assets" for xml.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - New snippet "Add frontend assets" for xml.
+
+### Changed
+- [#27](https://github.com/droggol/VscOdooSnippets/pull/27) - Show notification on extension upgrade.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - Changed prefix for xml snippets.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - Better wording.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - Snippets are more prefilled.
+- [#28](https://github.com/droggol/VscOdooSnippets/pull/28) - Update guideline link to Odoo latest version v13.
+
+### Fixed
+- [#27](https://github.com/droggol/VscOdooSnippets/pull/27) - Add new line at end of file for namespace snippet.
+
 ## [0.0.9](https://github.com/droggol/VscOdooSnippets/releases/tag/v0.0.9) - 2019-10-09
 ### Added
 - [#25](https://github.com/droggol/VscOdooSnippets/pull/25) - New snippet "Add a notebook" for xml.
