@@ -101,7 +101,7 @@ Prefix | Purpose
 `<pivot>` | Add pivot view
 `<activity>` | Add activity view
 `<qweb>` | Add qweb view
-`<inheritView>` | Add inherited view
+`<viewInherit>` | Add inherited view
 `<buttonHeader>` | Add button in form view header
 `<buttonBox>` | Add stat button container in form view
 `<buttonStat>` | Add stat button in form view

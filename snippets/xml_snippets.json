@@ -209,8 +209,8 @@
         ],
         "description": "Add qweb view"
     },
-    "Inherit view": {
-        "prefix": "<inheritView>",
+    "View inherit": {
+        "prefix": "<viewInherit>",
         "body": [
             "<record id=\"${1:inherit_view_id}_inherit_${2:module_name}\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${3:model.name}.view.${4|form,list,kanban,search,calendar,cohort,gantt,graph,pivot,activity,qweb|}.inherit</field>",
