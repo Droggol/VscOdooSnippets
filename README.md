@@ -123,6 +123,7 @@ Prefix | Purpose
 `<templateInherit>` | Add inherited template
 `<xpath>` | Add xpath
 `<xpathAttr>` | Add xpath to attributes
+`<attribute>` | Add attribute tag for xpath
 `<script>` | Add script tag
 `<link>` | Add link tag
 `<assetsBackend>` | Add backend assets
