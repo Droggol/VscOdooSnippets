@@ -476,6 +476,13 @@
         ],
         "description": "Add xpath to attributes"
     },
+    "Attribute tag": {
+        "prefix": "<attribute>",
+        "body": [
+            "<attribute name=\"${1:attribute}\">${2:attribute_value}</attribute>"
+        ],
+        "description": "Add attribute tag for xpath"
+    },
     "Script tag": {
         "prefix": "<script>",
         "body": [
