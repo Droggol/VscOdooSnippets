@@ -515,7 +515,7 @@
         "description": "Add frontend assets"
     },
     "t-if": {
-        "prefix": "t-if",
+        "prefix": "<t-if>",
         "body": [
             "<t t-if=\"${1:condition}\">",
             "\t$0",
@@ -524,7 +524,7 @@
         "description": "Add if condition"
     },
     "t-if-else": {
-        "prefix": "t-if",
+        "prefix": "<t-if>",
         "body": [
             "<t t-if=\"${1:condition}\">",
             "\t$0",
@@ -537,7 +537,7 @@
         "description": "Add if-else condition"
     },
     "t-foreach": {
-        "prefix": "t-foreach",
+        "prefix": "<t-foreach>",
         "body": [
             "<t t-foreach=\"${1:iteration}\" t-as=\"${2:variable}\">",
             "\t$0",
@@ -546,56 +546,56 @@
         "description": "Add foreach loop"
     },
     "t-set": {
-        "prefix": "t-set",
+        "prefix": "<t-set>",
         "body": [
             "<t t-set=\"${1:variable}\" t-value=\"${2:value}\"/>"
         ],
         "description": "Add variable"
     },
     "t-att": {
-        "prefix": "t-att",
+        "prefix": "<t-att>",
         "body": [
             "t-att-${1:attribute_name}=\"${0:value}\""
         ],
         "description": "Add attribute"
     },
     "t-attf": {
-        "prefix": "t-att",
+        "prefix": "<t-att>",
         "body": [
             "t-attf-${1:attribute_name}=\"${0:value}\""
         ],
         "description": "Add attribute with format value"
     },
     "t-esc": {
-        "prefix": "t-esc",
+        "prefix": "<t-esc>",
         "body": [
             "<t t-esc=\"${0:expression}\"/>"
         ],
         "description": "Evaluate expression"
     },
     "t-raw": {
-        "prefix": "t-raw",
+        "prefix": "<t-raw>",
         "body": [
             "<t t-raw=\"${0:variable}\"/>"
         ],
         "description": "Evaluate html content"
     },
     "t-call": {
-        "prefix": "t-call",
+        "prefix": "<t-call>",
         "body": [
             "<t t-call=\"${0:template_name}\"/>"
         ],
         "description": "Call other template"
     },
     "t-debug": {
-        "prefix": "t-debug",
+        "prefix": "<t-debug>",
         "body": [
             "<t t-debug=\"${0:pdb}\"/>"
         ],
         "description": "Invokes a debugger"
     },
     "t-log": {
-        "prefix": "t-log",
+        "prefix": "<t-log>",
         "body": [
             "<t t-log=\"${0:expression}\"/>"
         ],
