@@ -132,17 +132,17 @@ Prefix | Purpose
 
 Prefix | Purpose
 ------------ | -------------
-`t-if` | Add if condition
-`t-if-else` | Add if-else condition
-`t-foreach` | Add foreach loop
-`t-set` | Add variable
-`t-att` | Add attribute
-`t-attf` | Add attribute with format value
-`t-esc` | Evaluate expression
-`t-raw` | Evaluate html content
-`t-call` | Call other template
-`t-debug` | Invokes a debugger
-`t-log` | Log the expression result
+`<t-if>` | Add if condition
+`<t-if-else>` | Add if-else condition
+`<t-foreach>` | Add foreach loop
+`<t-set>` | Add variable
+`<t-att>` | Add attribute
+`<t-attf>` | Add attribute with format value
+`<t-esc>` | Evaluate expression
+`<t-raw>` | Evaluate html content
+`<t-call>` | Call other template
+`<t-debug>` | Invokes a debugger
+`<t-log>` | Log the expression result
 
 ## Contributing
 If you'd like to report an issue or help contribute to this visual studio code extension, please visit the repository on Github.
