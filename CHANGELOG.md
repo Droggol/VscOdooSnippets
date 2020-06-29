@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.1.0) - 2020-06-29
+### Added
+- [#29](https://github.com/droggol/VscOdooSnippets/pull/29) - New snippet "Add attribute tag for xpath" for xml.
+
+### Changed
+- [#29](https://github.com/droggol/VscOdooSnippets/pull/29) - Better prefix for inherited view snippet.
+- [#29](https://github.com/droggol/VscOdooSnippets/pull/29) - Better prefix for qweb snippets.
+
 ## [1.0.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.0.0) - 2020-04-12
 ### Added
 - [#26](https://github.com/droggol/VscOdooSnippets/pull/26) - New snippet "Add from import" for py.
