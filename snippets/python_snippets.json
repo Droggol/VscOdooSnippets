@@ -23,7 +23,6 @@
     "Import": {
         "prefix": "ooimport",
         "body": [
-            "# -*- coding: utf-8 -*-",
             "\nimport logging",
             "\nfrom odoo import _, api, fields, models",
             "\n_logger = logging.getLogger(__name__)",
