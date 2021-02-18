@@ -36,6 +36,9 @@
             {
                 "language": "xml",
                 "path": "./snippets/xml_snippets.json"
+            },
+            {
+                "path": "./snippets/multilang.code-snippets"
             }
         ]
     },
