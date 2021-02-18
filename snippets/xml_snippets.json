@@ -1,5 +1,5 @@
 {
-    "Namespace": {
+    "Odoo namespace": {
         "prefix": "<odoo>",
         "body": [
             "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
@@ -8,6 +8,18 @@
             "\t${0}",
             "",
             "</odoo>",
+            ""
+        ],
+        "description": "Add Odoo namespace"
+    },
+    "Data namespace": {
+        "prefix": "<data>",
+        "body": [
+            "<data${10: noupdate=\"1\"}>",
+            "",
+            "\t${0}",
+            "",
+            "</data>",
             ""
         ],
         "description": "Add Odoo namespace"
