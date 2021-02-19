@@ -463,7 +463,7 @@
         "prefix": "<templateInherit>",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
-            "\t<xpath expr=\"${4}\" position=\"${5|inside,after,before,replace,move|}\">",
+            "\t<xpath expr=\"${4}\" position=\"${5|inside,after,before,replace,move,attributes|}\">",
             "\t\t$0",
             "\t</xpath>",
             "</template>"
@@ -473,7 +473,7 @@
     "Xpath": {
         "prefix": "<xpath>",
         "body": [
-            "<xpath expr=\"${1}\" position=\"${2|inside,after,before,replace,move|}\">",
+            "<xpath expr=\"${1}\" position=\"${2|inside,after,before,replace,move,attributes|}\">",
             "\t$0",
             "</xpath>"
         ],
@@ -483,7 +483,7 @@
         "prefix": "<xpathAttr>",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
-            "\t<attribute name=\"${2:attribute}\">${3:attribute_value}</attribute>",
+            "\t<attribute name=\"${20:class}\" separator=\"${30: }\" add=\"${40:new-class}\" remove=\"${50:old-class}\">${60:attribute_value}</attribute>",
             "</xpath>"
         ],
         "description": "Add xpath to attributes"
@@ -491,7 +491,7 @@
     "Attribute tag": {
         "prefix": "<attribute>",
         "body": [
-            "<attribute name=\"${1:attribute}\">${2:attribute_value}</attribute>"
+            "<attribute name=\"${20:class}\" separator=\"${30: }\" add=\"${40:new-class}\" remove=\"${50:old-class}\">${60:attribute_value}</attribute>"
         ],
         "description": "Add attribute tag for xpath"
     },
