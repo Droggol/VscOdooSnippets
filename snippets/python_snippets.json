@@ -23,8 +23,7 @@
     "Import": {
         "prefix": "ooimport",
         "body": [
-            "# -*- coding: utf-8 -*-",
-            "\nfrom odoo import _, api, fields, models",
+            "from odoo import _, api, fields, models",
             "\n"
         ],
         "description": "Add an import"
