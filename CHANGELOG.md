@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.2.0) - 2021-02-23
+### Added
+- [#32](https://github.com/droggol/VscOdooSnippets/pull/32) - New snippet "Domain leaf" for multi-language. (Thanks [@Yajo](https://github.com/Yajo))
+- [#34](https://github.com/droggol/VscOdooSnippets/pull/34) - New snippet "Add data namespace" for xml. (By [@Yajo](https://github.com/Yajo))
+
+### Changed
+- [#30](https://github.com/droggol/VscOdooSnippets/pull/30) - Remove logger from import.
+- [#31](https://github.com/droggol/VscOdooSnippets/pull/31) - Remove coding comment. (By [@Yajo](https://github.com/Yajo))
+- [#33](https://github.com/droggol/VscOdooSnippets/pull/33) - Add _inherit key in 'Add model' snippet, also added regex. (By [@Yajo](https://github.com/Yajo))
+- [#35](https://github.com/droggol/VscOdooSnippets/pull/35) - Improved xpath and attribute snippets. (By [@Yajo](https://github.com/Yajo))
+
 ## [1.1.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.1.0) - 2020-06-29
 ### Added
 - [#29](https://github.com/droggol/VscOdooSnippets/pull/29) - New snippet "Add attribute tag for xpath" for xml.
