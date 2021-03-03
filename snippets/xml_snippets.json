@@ -276,6 +276,13 @@
         ],
         "description": "Add field tag"
     },
+    "Filter tag": {
+        "prefix": "<filter>",
+        "body": [
+            "<filter name=\"${10:filter_name}\" string=\"${20:${10/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}\" domain=\"[('${30:field_name}', '${40:=}', ${50:'value'})${60}]\" context=\"{'${70:group_by}': ${80:'field_name'}${90}}\" />$0"
+        ],
+        "description": "Add a filter to a search view"
+    },
     "Notebook": {
         "prefix": "<notebook>",
         "body": [

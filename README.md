@@ -106,6 +106,7 @@ Prefix | Purpose
 `<buttonBox>` | Add stat button container in form view
 `<buttonStat>` | Add stat button in form view
 `<field>` | Add field tag
+`<filter>` | Add a filter to a search view
 `<notebook>` | Add a notebook
 `<page>` | Add a notebook page
 `<chatter>` | Add chatter
