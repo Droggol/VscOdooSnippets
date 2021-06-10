@@ -12,7 +12,7 @@
         ],
         "description": "Add Odoo namespace"
     },
-    "Data namespace": {
+    "Data": {
         "prefix": "<data>",
         "body": [
             "<data${10: noupdate=\"1\"}>",
@@ -22,7 +22,7 @@
             "</data>",
             ""
         ],
-        "description": "Add Odoo namespace"
+        "description": "Add data tag"
     },
     "Root menu": {
         "prefix": "<menuitem>",
@@ -490,7 +490,7 @@
         "prefix": "<xpathAttr>",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
-            "\t<attribute name=\"${20:class}\" separator=\"${30: }\" add=\"${40:new-class}\" remove=\"${50:old-class}\">${60:attribute_value}</attribute>",
+            "\t<attribute name=\"${2:name}\">${3:value}</attribute>",
             "</xpath>"
         ],
         "description": "Add xpath to attributes"
@@ -498,7 +498,7 @@
     "Attribute tag": {
         "prefix": "<attribute>",
         "body": [
-            "<attribute name=\"${20:class}\" separator=\"${30: }\" add=\"${40:new-class}\" remove=\"${50:old-class}\">${60:attribute_value}</attribute>"
+            "<attribute name=\"${2:name}\">${3:value}</attribute>"
         ],
         "description": "Add attribute tag for xpath"
     },

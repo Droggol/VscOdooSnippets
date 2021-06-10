@@ -36,6 +36,10 @@ Most snippets prefixed with `oo`. For example if you want to add `create` CRUD m
 
 <img src="https://raw.githubusercontent.com/droggol/VscOdooSnippets/master/images/demo.gif" width="624" height="544"/>
 
+## Search Snippets
+
+You can search snippets with `Odoo Snippet Search` command which can be run by pressing `Ctrl+Shift+P` or `Command+Shift+P` (for Mac).
+
 ## Documentation
 
 #### Python (`.py`)
@@ -88,6 +92,7 @@ confirm | Add confirm dialog
 Prefix | Purpose
 ------------ | -------------
 `<odoo>` | Add Odoo namespace
+`<data>` | Add data tag
 `<menuitem>` | Add root menu
 `<menuitem>` | Add sub menu
 `<form>` | Add form view

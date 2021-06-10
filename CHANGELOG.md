@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.3.0) - 2021-06-10
+### Added
+- [#37](https://github.com/droggol/VscOdooSnippets/pull/37) - Added snippet search command
+- [#37](https://github.com/droggol/VscOdooSnippets/pull/37) - Moving to typescript
+
 ## [1.2.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.2.0) - 2021-02-23
 ### Added
 - [#32](https://github.com/droggol/VscOdooSnippets/pull/32) - New snippet "Domain leaf" for multi-language. (Thanks [@Yajo](https://github.com/Yajo))
