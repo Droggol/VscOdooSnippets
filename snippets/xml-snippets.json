@@ -490,7 +490,7 @@
         "prefix": "<xpathAttr>",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
-            "\t<attribute name=\"${2:name}\">${3:value}</attribute>",
+            "\t<attribute name=\"${20}\" ${30:separator=\"${35}\" }${40:add=\"${45}\" }${50:remove=\"${55}\" }${63:value=\"${60}\"}${66:>${60}</attribute}>",
             "</xpath>"
         ],
         "description": "Add xpath to attributes"
@@ -514,7 +514,7 @@
     "Attribute tag": {
         "prefix": "<attribute>",
         "body": [
-            "<attribute name=\"${2:name}\">${3:value}</attribute>"
+            "<attribute name=\"${20}\" ${30:separator=\"${35}\" }${40:add=\"${45}\" }${50:remove=\"${55}\" }${63:value=\"${60}\"}${66:>${60}</attribute}>"
         ],
         "description": "Add attribute tag for xpath"
     },
