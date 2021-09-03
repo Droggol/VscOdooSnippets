@@ -49,6 +49,8 @@ Prefix | Purpose
 ------------ | -------------
 manifest | Add manifest json
 import | Add an import
+feimport | Add an import from odoo exceptions
+limport | Add an import from logging and create logger
 fimport | Add an import from
 model | Add model
 fchar | Add char field

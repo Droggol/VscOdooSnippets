@@ -28,6 +28,22 @@
         ],
         "description": "Add an import"
     },
+    "From exceptions import": {
+        "prefix": "oofeimport",
+        "body": [
+            "from odoo.exceptions import ${100|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}",
+        ],
+        "description" : "Add an import from odoo exceptions"
+    },
+    "Import logging": {
+        "prefix": "oolimport",
+        "body": [
+            "import logging",
+            "\n\n_logger = logging.getLogger(__name__)",
+            "\n"
+        ],
+        "description" : "Add an import from logging and create logger"
+    },
     "From import": {
         "prefix": "oofimport",
         "body": "from . import ${1:names}",
