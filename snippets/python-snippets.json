@@ -31,7 +31,7 @@
     "From exceptions import": {
         "prefix": "oofeimport",
         "body": [
-            "from odoo.exceptions import ${100|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}",
+            "from odoo.exceptions import ${100|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}"
         ],
         "description" : "Add an import from odoo exceptions"
     },
@@ -192,19 +192,45 @@
         ],
         "description": "Add onchange field"
     },
-    "Constrains on field": {
+    "SQL Constraints": {
+        "prefix": "oofconstrains",
+        "body": [
+            "_sql_constraints = [",
+            "\t(\"${1:field_name}_${2|check,unique|}\", \"${2}(${1})\", \"${3:Error message}\"),",
+            "]"
+        ],
+        "description": "Add SQL constraints to check or unique field"
+    },
+    "Python Constrains": {
         "prefix": "oofconstrains",
         "body": [
             "@api.constrains('${1:fieldname}')",
             "def _constrains_${1}(self):",
             "\t${0:pass}"
         ],
-        "description": "Add constrains on field"
+        "description": "Add a python constrains"
+    },
+    "Ensure one record": {
+        "prefix": "ooone",
+        "body": [
+            "self.ensure_one()"
+        ],
+        "description": "Ensure one record passing to this method"
+    },
+    "Override hook method": {
+        "prefix": "oosuper",
+        "body": [
+            "def ${1:method_name}(self, ${2:vals}):",
+            "\tres = super().${1:method_name}(${2:vals})",
+            "\t${0}",
+            "\treturn res"
+        ],
+        "description": "Add an override hook method"
     },
     "Create method": {
         "prefix": "oocreate",
         "body": [
-            "@api.${1|model,model_create_multi|}",
+            "@api.model_create_multi",
             "def create(self, ${2:vals}):",
             "\treturn super().create(${2:vals})"
         ],
@@ -213,7 +239,6 @@
     "Write method": {
         "prefix": "oowrite",
         "body": [
-            "@api.multi",
             "def write(self, vals):",
             "\treturn super().write(vals)"
         ],
@@ -222,7 +247,6 @@
     "Unlink method": {
         "prefix": "oounlink",
         "body": [
-            "@api.multi",
             "def unlink(self):",
             "\treturn super().unlink()"
         ],

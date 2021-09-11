@@ -70,7 +70,9 @@ fmany2many | Add many2many field
 fcompute | Add compute field
 fcomputei | Add compute field with inverse method
 fonchange | Add onchange field
-fconstrains | Add constrains on field
+fconstrains | Add constrains on field (SQL/ORM)
+super | Add an override hook method
+one | Ensure one record
 create | Add create method
 write | Add write method
 unlink | Add unlink method
@@ -129,6 +131,7 @@ Prefix | Purpose
 `<function>` | Add function
 `<template>` | Add template
 `<templateInherit>` | Add inherited template
+`<group>` | Add a group tag
 `<xpath>` | Add xpath
 `<xpathAttr>` | Add xpath to attributes
 `<attribute>` | Add attribute tag for xpath

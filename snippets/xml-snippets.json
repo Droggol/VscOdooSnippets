@@ -495,6 +495,22 @@
         ],
         "description": "Add xpath to attributes"
     },
+    "Empty group tag": {
+        "prefix": "<group>",
+        "body": [
+            "<group></group>"
+        ],
+        "description": "Add an empty group tag"
+    },
+    "Group tag": {
+        "prefix": "<group>",
+        "body": [
+            "<group name=\"${2:name}\" string=\"${3:string}\">",
+            "\t$0",
+            "</group>"
+        ],
+        "description": "Add a group tag with string"
+    },
     "Attribute tag": {
         "prefix": "<attribute>",
         "body": [
