@@ -17,7 +17,7 @@
         "Snippets"
     ],
     "keywords": [
-        "odoo", "snippets", "python", "xml", "javascript", "qweb"
+        "odoo", "snippets", "python", "xml", "javascript", "qweb", "csv"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [
@@ -42,6 +42,10 @@
             {
                 "language": "xml",
                 "path": "./snippets/xml-snippets.json"
+            },
+            {
+                "language": "csv",
+                "path": "./snippets/csv-snippets.json"
             },
             {
                 "path": "./snippets/multilang.code-snippets"

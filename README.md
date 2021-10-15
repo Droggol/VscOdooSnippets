@@ -23,6 +23,7 @@ This extension contains predefined code snippets for [Odoo](https://www.odoo.com
 * Python (`.py`)
 * Javascript (`.js`)
 * XML (`.xml`)
+* CSV (`.csv`)
 
 All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/13.0/reference/guidelines.html).
 
@@ -155,6 +156,15 @@ Prefix | Purpose
 `<t-call>` | Call other template
 `<t-debug>` | Invokes a debugger
 `<t-log>` | Log the expression result
+
+#### CSV (`.csv`)
+
+##### Prefixed with `oo`
+Prefix | Purpose
+------------ | -------------
+hdr | Add a header line for odoo model access file
+all | Add an all group access record
+spec | Add a specify group access record
 
 ## Contributing
 If you'd like to report an issue or help contribute to this visual studio code extension, please visit the repository on Github.
