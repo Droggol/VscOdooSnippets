@@ -2,7 +2,7 @@
     "name": "OdooSnippets",
     "displayName": "Odoo Snippets",
     "description": "Snippets for Odoo developer",
-    "version": "1.3.1",
+    "version": "1.4.0",
     "icon": "images/icon.png",
     "publisher": "jigar-patel",
     "engines": {
@@ -17,7 +17,13 @@
         "Snippets"
     ],
     "keywords": [
-        "odoo", "snippets", "python", "xml", "javascript", "qweb", "csv"
+        "odoo",
+        "snippets",
+        "python",
+        "xml",
+        "javascript",
+        "qweb",
+        "csv"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [
@@ -26,8 +32,8 @@
     "contributes": {
         "commands": [
             {
-              "command": "extension.snippetSearch",
-              "title": "Odoo Snippet Search"
+                "command": "extension.snippetSearch",
+                "title": "Odoo Snippet Search"
             }
         ],
         "snippets": [
@@ -73,12 +79,15 @@
         "@types/mocha": "^7.0.1",
         "@types/node": "^12.11.7",
         "@types/vscode": "^1.39.0",
-        "eslint": "^6.8.0",
-        "@typescript-eslint/parser": "^2.18.0",
         "@typescript-eslint/eslint-plugin": "^2.18.0",
+        "@typescript-eslint/parser": "^2.18.0",
+        "eslint": "^6.8.0",
         "glob": "^7.1.6",
         "mocha": "^7.0.1",
         "typescript": "^3.7.5",
         "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "latest-version": "^6.0.0"
     }
 }

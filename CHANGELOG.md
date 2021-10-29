@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.4.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.4.0) - 2021-10-29
+### Added
+- [#39](https://github.com/droggol/VscOdooSnippets/pull/39) - New snippet "Add import" for py. (Thanks [@nhatnm0612](https://github.com/nhatnm0612))
+- [#40](https://github.com/droggol/VscOdooSnippets/pull/40) - New snippet "Ensure one record" for py. (By [@nhatnm0612](https://github.com/nhatnm0612))
+- [#40](https://github.com/droggol/VscOdooSnippets/pull/40) - New snippet "Add an override hook method" for py. (By [@nhatnm0612](https://github.com/nhatnm0612))
+- [#40](https://github.com/droggol/VscOdooSnippets/pull/40) - New snippet "Add a group tag" for xml. (By [@nhatnm0612](https://github.com/nhatnm0612))
+- [#42](https://github.com/droggol/VscOdooSnippets/pull/42) - New snippets for csv. (By [@nhatnm0612](https://github.com/nhatnm0612))
+
+### Changed
+- [#38](https://github.com/droggol/VscOdooSnippets/pull/38) - Smarter attribute snippets. (Thanks [@Yajo](https://github.com/Yajo))
+
 ## [1.3.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.3.0) - 2021-06-10
 ### Added
 - [#37](https://github.com/droggol/VscOdooSnippets/pull/37) - Added snippet search command
