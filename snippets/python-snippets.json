@@ -62,42 +62,42 @@
     "Char field": {
         "prefix": "oofchar",
         "body": [
-            "${1:field_name} = fields.Char(string='${2}')${0}"
+            "${1:field_name} = fields.Char(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add char field"
     },
     "Text field": {
         "prefix": "ooftext",
         "body": [
-            "${1:field_name} = fields.Text(string='${2}')${0}"
+            "${1:field_name} = fields.Text(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add text field"
     },
     "Html field": {
         "prefix": "oofhtml",
         "body": [
-            "${1:field_name} = fields.Html(string='${2}')${0}"
+            "${1:field_name} = fields.Html(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add html field"
     },
     "Boolean field": {
         "prefix": "oofboolean",
         "body": [
-            "${1:field_name} = fields.Boolean(string='${2}')${0}"
+            "${1:field_name} = fields.Boolean(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add boolean field"
     },
     "Integer field": {
         "prefix": "oofinteger",
         "body": [
-            "${1:field_name} = fields.Integer(string='${2}')${0}"
+            "${1:field_name} = fields.Integer(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add integer field"
     },
     "Float field": {
         "prefix": "ooffloat",
         "body": [
-            "${1:field_name} = fields.Float(string='${2}', digits=(${3:total, decimal}))${0}"
+            "${1:field_name} = fields.Float(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}', digits=(${3:total, decimal}))${0}"
         ],
         "description": "Add float field"
     },
@@ -106,63 +106,63 @@
         "body": [
             "${1:field_name} = fields.Selection([",
             "\t('${2:key}', '${3:value}')",
-            "], string='${4}')${0}"
+            "], string='${4:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add selection field"
     },
     "Date field": {
         "prefix": "oofdate",
         "body": [
-            "${1:field_name} = fields.Date(string='${2}')${0}"
+            "${1:field_name} = fields.Date(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add date field"
     },
     "Datetime field": {
         "prefix": "oofdatetime",
         "body": [
-            "${1:field_name} = fields.Datetime(string='${2}')${0}"
+            "${1:field_name} = fields.Datetime(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add datetime field"
     },
     "Binary field": {
         "prefix": "oofbinary",
         "body": [
-            "${1:field_name} = fields.Binary(string='${2}')${0}"
+            "${1:field_name} = fields.Binary(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add binary field"
     },
     "Monetary field": {
         "prefix": "oofmonetary",
         "body": [
-            "${1:field_name} = fields.Monetary(string='${2}')${0}"
+            "${1:field_name} = fields.Monetary(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add monetary field"
     },
     "Many2one field": {
         "prefix": "oofmany2one",
         "body": [
-            "${1:field_name} = fields.Many2one('${2:comodel_name}', string='${3}')${0}"
+            "${1:field_name} = fields.Many2one('${2:comodel_name}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add many2one field"
     },
     "One2many field": {
         "prefix": "oofone2many",
         "body": [
-            "${1:field_name} = fields.One2many('${2:comodel_name}', '${3:inverse_field_name}', string='${4}')${0}"
+            "${1:field_name} = fields.One2many('${2:comodel_name}', '${3:inverse_field_name}', string='${4:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add one2many field"
     },
     "Many2many field": {
         "prefix": "oofmany2many",
         "body": [
-            "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3}')${0}"
+            "${1:field_name} = fields.Many2many('${2:comodel_name}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
         "description": "Add many2many field"
     },
     "Compute field": {
         "prefix": "oofcompute",
         "body": [
-            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary,Monetary|}(compute='_compute_${1}', string='${3}')",
+            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary,Monetary|}(compute='_compute_${1}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')",
             "",
             "@api.depends('${0}')",
             "def _compute_${1}(self):",
@@ -173,7 +173,7 @@
     "Compute field with inverse": {
         "prefix": "oofcomputei",
         "body": [
-            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary|}(compute='_compute_${1}', inverse='_inverse_${1}', string='${3}')",
+            "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary|}(compute='_compute_${1}', inverse='_inverse_${1}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')",
             "",
             "@api.depends('${0}')",
             "def _compute_${1}(self):",
