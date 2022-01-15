@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.5.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.5.0) - 2022-01-15
+### Added
+- [#45](https://github.com/droggol/VscOdooSnippets/pull/45) - Added owl snippets, Added few more snippets for xml and py, Revamped existing snippets, and many more.
+
+### Changed
+- [#38](https://github.com/droggol/VscOdooSnippets/pull/43) - Added regex on few xml snippets. (Thanks [@nhatnm0612](https://github.com/nhatnm0612))
+- [#38](https://github.com/droggol/VscOdooSnippets/pull/44) - Added regex on few py snippets. (Thanks [@jeffery9](https://github.com/jeffery9))
+
+### Removed
+- [#45](https://github.com/droggol/VscOdooSnippets/pull/45) - Removed older js snippets.
+
 ## [1.4.0](https://github.com/droggol/VscOdooSnippets/releases/tag/v1.4.0) - 2021-10-29
 ### Added
 - [#39](https://github.com/droggol/VscOdooSnippets/pull/39) - New snippet "Add import" for py. (Thanks [@nhatnm0612](https://github.com/nhatnm0612))

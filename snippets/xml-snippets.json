@@ -1,5 +1,5 @@
 {
-    "Odoo namespace": {
+    "Odoo Namespace": {
         "prefix": "<odoo>",
         "body": [
             "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
@@ -10,21 +10,21 @@
             "</odoo>",
             ""
         ],
-        "description": "Add Odoo namespace"
+        "description": "Odoo Namespace"
     },
     "Data": {
         "prefix": "<data>",
         "body": [
-            "<data${10: noupdate=\"1\"}>",
+            "<data${1: noupdate=\"1\"}>",
             "",
             "\t${0}",
             "",
             "</data>",
             ""
         ],
-        "description": "Add data tag"
+        "description": "Data Tag"
     },
-    "Root menu": {
+    "Root Menu": {
         "prefix": "<menuitem>",
         "body": [
             "<menuitem",
@@ -32,9 +32,9 @@
             "\tname=\"${2:name}\"",
             "\tsequence=\"${3:10}\"/>"
         ],
-        "description": "Add root menu"
+        "description": "Root Menu"
     },
-    "Sub menu": {
+    "Submenu": {
         "prefix": "<menuitem>",
         "body": [
             "<menuitem",
@@ -45,9 +45,9 @@
             "\tparent=\"${5:parent_id}\"",
             "\tsequence=\"${6:10}\"/>"
         ],
-        "description": "Add sub menu"
+        "description": "Submenu"
     },
-    "Form view": {
+    "Form View": {
         "prefix": "<form>",
         "body": [
             "<record id=\"${1:model_name}_view_form\" model=\"ir.ui.view\">",
@@ -64,10 +64,10 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add form view"
+        "description": "Form View"
     },
-    "List view": {
-        "prefix": "<list>",
+    "Tree View": {
+        "prefix": "<tree>",
         "body": [
             "<record id=\"${1:model_name}_view_tree\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${2:${1/[_]/./g}}.view.tree</field>",
@@ -79,9 +79,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add list view"
+        "description": "Tree View"
     },
-    "Kanban view": {
+    "Kanban View": {
         "prefix": "<kanban>",
         "body": [
             "<record id=\"${1:model_name}_view_kanban\" model=\"ir.ui.view\">",
@@ -98,9 +98,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add kanban view"
+        "description": "Kanban View"
     },
-    "Search view": {
+    "Search View": {
         "prefix": "<search>",
         "body": [
             "<record id=\"${1:model_name}_view_search\" model=\"ir.ui.view\">",
@@ -113,9 +113,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add search view"
+        "description": "Search View"
     },
-    "Calendar view": {
+    "Calendar View": {
         "prefix": "<calendar>",
         "body": [
             "<record id=\"${1:model_name}_view_calendar\" model=\"ir.ui.view\">",
@@ -128,9 +128,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add calendar view"
+        "description": "Calendar View"
     },
-    "Cohort view": {
+    "Cohort View": {
         "prefix": "<cohort>",
         "body": [
             "<record id=\"${1:model_name}_view_cohort\" model=\"ir.ui.view\">",
@@ -142,9 +142,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add cohort view"
+        "description": "Cohort View"
     },
-    "Gantt view": {
+    "Gantt View": {
         "prefix": "<gantt>",
         "body": [
             "<record id=\"${1:model_name}_view_gantt\" model=\"ir.ui.view\">",
@@ -156,9 +156,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add gantt view"
+        "description": "Gantt View"
     },
-    "Graph view": {
+    "Graph View": {
         "prefix": "<graph>",
         "body": [
             "<record id=\"${1:model_name}_view_graph\" model=\"ir.ui.view\">",
@@ -171,9 +171,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add graph view"
+        "description": "Graph View"
     },
-    "Pivot view": {
+    "Pivot View": {
         "prefix": "<pivot>",
         "body": [
             "<record id=\"${1:model_name}_view_pivot\" model=\"ir.ui.view\">",
@@ -186,9 +186,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add pivot view"
+        "description": "Pivot View"
     },
-    "Activity view": {
+    "Activity View": {
         "prefix": "<activity>",
         "body": [
             "<record id=\"${1:model_name}_view_activity\" model=\"ir.ui.view\">",
@@ -205,9 +205,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add activity view"
+        "description": "Activity View"
     },
-    "Qweb view": {
+    "Qweb View": {
         "prefix": "<qweb>",
         "body": [
             "<record id=\"${1:model_name}_view_qweb\" model=\"ir.ui.view\">",
@@ -219,9 +219,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add qweb view"
+        "description": "Qweb View"
     },
-    "View inherit": {
+    "Inherit View": {
         "prefix": "<viewInherit>",
         "body": [
             "<record id=\"${1:inherit_view_id}_inherit_${2:module_name}\" model=\"ir.ui.view\">",
@@ -233,16 +233,16 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add inherited view"
+        "description": "Inherit View"
     },
-    "Header button": {
+    "Header Button": {
         "prefix": "<buttonHeader>",
         "body": [
             "<button string=\"${1}\" name=\"${2:action_name}\" type=\"${3|object,action|}\" class=\"oe_highlight\"/>"
         ],
-        "description": "Add button in form view header"
+        "description": "Button in Form View Header"
     },
-    "Button box": {
+    "Button Box": {
         "prefix": "<buttonBox>",
         "body": [
             "<div class=\"oe_button_box\" name=\"button_box\">",
@@ -251,37 +251,37 @@
             "\t</button>",
             "</div>"
         ],
-        "description": "Add stat button container in form view"
+        "description": "Stat Button Container"
     },
-    "Stat button": {
+    "Stat Button": {
         "prefix": "<buttonStat>",
         "body": [
             "<button name=\"${1:action_name}\" type=\"${2|object,action|}\" class=\"oe_stat_button\" icon=\"fa-${3}\">",
             "\t<field name=\"${4:field_name}\" string=\"${5}\" widget=\"statinfo\"/>",
             "</button>"
         ],
-        "description": "Add stat button in form view"
+        "description": "Stat Button"
     },
-    "Self-closing field tag": {
+    "Self Closing Field": {
         "prefix": "<field>",
         "body": [
             "<field name=\"${1}\" ${2}/>${0}"
         ],
-        "description": "Add a self-closing field tag"
+        "description": "Self Closing Field"
     },
-    "Field tag": {
+    "Field": {
         "prefix": "<field>",
         "body": [
             "<field name=\"${1}\"${2}>${3}</field>${0}"
         ],
-        "description": "Add field tag"
+        "description": "Field"
     },
-    "Filter tag": {
+    "Filter": {
         "prefix": "<filter>",
         "body": [
-            "<filter name=\"${10:filter_name}\" string=\"${20:${10/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}\" domain=\"[('${30:field_name}', '${40:=}', ${50:'value'})${60}]\" context=\"{'${70:group_by}': ${80:'field_name'}${90}}\" />$0"
+            "<filter name=\"${1:filter_name}\" string=\"${2:${1/([a-z]+)([\\._]?)/${1:/capitalize}/g}}\" domain=\"[('${3:field_name}', '${4:=}', '${5:value}')]\" context=\"{'${6:group_by}': '${7:field_name}'}\" />$0"
         ],
-        "description": "Add a filter to a search view"
+        "description": "Filter in Search View"
     },
     "Notebook": {
         "prefix": "<notebook>",
@@ -292,7 +292,7 @@
             "\t</page>",
             "</notebook>"
         ],
-        "description": "Add a notebook"
+        "description": "Notebook"
     },
     "Page": {
         "prefix": "<page>",
@@ -301,7 +301,7 @@
             "\t$0",
             "</page>"
         ],
-        "description": "Add a notebook page"
+        "description": "Notebook Page"
     },
     "Chatter": {
         "prefix": "<chatter>",
@@ -312,26 +312,9 @@
             "\t<field name=\"message_ids\" widget=\"mail_thread\"/>",
             "</div>"
         ],
-        "description": "Add chatter"
+        "description": "Chatter"
     },
-    "Action (v12 and older)": {
-        "prefix": "<action>",
-        "body": [
-            "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
-            "\t<field name=\"name\">${2:Action Name}</field>",
-            "\t<field name=\"res_model\">${3:${1/[_]/./g}}</field>",
-            "\t<field name=\"view_type\">${4:form}</field>",
-            "\t<field name=\"view_mode\">${5:tree,form}</field>",
-            "\t<field name=\"domain\">[${6}]</field>",
-            "\t<field name=\"context\">{${7}}</field>",
-            "\t<field name=\"help\" type=\"html\">",
-            "\t\t${0}",
-            "\t</field>",
-            "</record>"
-        ],
-        "description": "Add an action"
-    },
-    "Action (v13)": {
+    "Action": {
         "prefix": "<action>",
         "body": [
             "<record id=\"${1:model_name}_action\" model=\"ir.actions.act_window\">",
@@ -345,9 +328,9 @@
             "\t</field>",
             "</record>"
         ],
-        "description": "Add an action"
+        "description": "Action"
     },
-    "Action view": {
+    "Action View": {
         "prefix": "<actionView>",
         "body": [
             "<record id=\"action_${1:action_view_name}\" model=\"ir.actions.act_window.view\">",
@@ -357,9 +340,9 @@
             "\t<field name=\"view_id\" ref=\"${5:view_id}\"/>",
             "</record>"
         ],
-        "description": "Add view in action"
+        "description": "View in Action"
     },
-    "Server action": {
+    "Server Action": {
         "prefix": "<actionServer>",
         "body": [
             "<record id=\"${1:model_name}_action_server\" model=\"ir.actions.server\">",
@@ -370,9 +353,9 @@
             "\t<field name=\"code\">${0}</field>",
             "</record>"
         ],
-        "description": "Add server action"
+        "description": "Server Action"
     },
-    "URL action": {
+    "URL Action": {
         "prefix": "<actionUrl>",
         "body": [
             "<record id=\"action_${1:action_name}\" model=\"ir.actions.act_url\">",
@@ -381,9 +364,9 @@
             "\t<field name=\"target\">${4|new,self|}</field>",
             "</record>"
         ],
-        "description": "Add URL action"
+        "description": "URL Action"
     },
-    "Client action": {
+    "Client Action": {
         "prefix": "<actionClient>",
         "body": [
             "<record id=\"action_${1:action_name}\" model=\"ir.actions.client\">",
@@ -392,28 +375,30 @@
             "\t<field name=\"target\">${4|main,fullscreen,new|}</field>",
             "</record>"
         ],
-        "description": "Add client action"
+        "description": "Client Action"
     },
-    "Report action": {
+    "Report Action": {
         "prefix": "<actionReport>",
         "body": [
-            "<report",
-            "\tid=\"action_report_${1:model_name}\"",
-            "\tmodel=\"${2:model.name}\"",
-            "\tstring=\"${3:Report name}\"",
-            "\treport_type=\"${4|qweb-pdf,qweb-html,qweb-text|}\"",
-            "\tname=\"${5:module_name.report_template_name}\"",
-            "\tfile=\"${5:module_name.report_template_name}\"",
-            "/>"
+            "<record id=\"action_report_${1:action_name}\" model=\"ir.actions.report\">",
+            "\t<field name=\"name\">${2:Name}</field>",
+            "\t<field name=\"model\">${3:${1/[_]/./g}}</field>",
+            "\t<field name=\"report_type\">${4|qweb-pdf,qweb-html,qweb-text|}</field>",
+            "\t<field name=\"report_name\">${5:report.name}</field>",
+            "\t<field name=\"report_file\">${5:report.name}</field>",
+            "\t<field name=\"print_report_name\">'%s' % object.name</field>",
+            "\t<field name=\"binding_model_id\" ref=\"model_${1}\"/>",
+            "\t<field name=\"binding_type\">report</field>",
+            "</record>"
         ],
-        "description": "Add report action"
+        "description": "Report Action"
     },
-    "Report template": {
+    "Report Template": {
         "prefix": "<report>",
         "body": [
             "<template id=\"${1:report_template_name}\">",
             "\t<t t-call=\"web.html_container\">",
-            "\t\t<t t-foreach=\"docs\" t-as=\"doc\">",
+            "\t\t<t t-foreach=\"docs\" t-as=\"o\">",
             "\t\t\t<t t-call=\"web.${2|external,internal|}_layout\">",
             "\t\t\t\t<div class=\"page\">",
             "\t\t\t\t\t${0}",
@@ -423,9 +408,9 @@
             "\t</t>",
             "</template>"
         ],
-        "description": "Add report template"
+        "description": "Report Template"
     },
-    "Cron job": {
+    "Cron": {
         "prefix": "<cron>",
         "body": [
             "<record id=\"${1:model_name}_cron\" model=\"ir.cron\">",
@@ -438,7 +423,7 @@
             "\t<field name=\"code\">${0}</field>",
             "</record>"
         ],
-        "description": "Add cron job"
+        "description": "Cron"
     },
     "Record": {
         "prefix": "<record>",
@@ -447,7 +432,7 @@
             "\t<field name=\"${3:field_name}\">${4:field_value}</field>",
             "</record>"
         ],
-        "description": "Add record"
+        "description": "Record"
     },
     "Function": {
         "prefix": "<function>",
@@ -455,7 +440,7 @@
             "<function model=\"${1:model.name}\" name=\"${2:method_name}\" eval=\"[ref('${3:record_id}')]\">",
             "</function>"
         ],
-        "description": "Add function"
+        "description": "Function"
     },
     "Template": {
         "prefix": "<template>",
@@ -464,9 +449,9 @@
             "\t${0}",
             "</template>"
         ],
-        "description": "Add template"
+        "description": "Template"
     },
-    "Inherit template": {
+    "Inherit Template": {
         "prefix": "<templateInherit>",
         "body": [
             "<template id=\"${1:template_id}\" name=\"${3:template_name}\" inherit_id=\"${2:module_name}.${1:template_id}\">",
@@ -475,7 +460,7 @@
             "\t</xpath>",
             "</template>"
         ],
-        "description": "Add inherited template"
+        "description": "Inherit Template"
     },
     "Xpath": {
         "prefix": "<xpath>",
@@ -484,55 +469,57 @@
             "\t$0",
             "</xpath>"
         ],
-        "description": "Add xpath"
+        "description": "Xpath"
     },
-    "Xpath attributes": {
+    "Xpath Attributes": {
         "prefix": "<xpathAttr>",
         "body": [
             "<xpath expr=\"${1}\" position=\"attributes\">",
             "\t<attribute name=\"${20}\" ${30:separator=\"${35}\" }${40:add=\"${45}\" }${50:remove=\"${55}\" }${63:value=\"${60}\"}${66:>${60}</attribute}>",
             "</xpath>"
         ],
-        "description": "Add xpath to attributes"
+        "description": "Xpath to Attributes"
     },
-    "Empty group tag": {
-        "prefix": "<group>",
+    "Xpath Field": {
+        "prefix": "<xpathField>",
         "body": [
-            "<group></group>"
-        ],
-        "description": "Add an empty group tag"
-    },
-    "Group tag": {
-        "prefix": "<group>",
-        "body": [
-            "<group name=\"${2:name}\" string=\"${3:string}\">",
+            "<field position=\"${1|after,before,replace,move,attributes|}\">",
             "\t$0",
-            "</group>"
+            "</field>"
         ],
-        "description": "Add a group tag with string"
+        "description": "Xpath for Field"
     },
-    "Attribute tag": {
+    "Attribute": {
         "prefix": "<attribute>",
         "body": [
             "<attribute name=\"${20}\" ${30:separator=\"${35}\" }${40:add=\"${45}\" }${50:remove=\"${55}\" }${63:value=\"${60}\"}${66:>${60}</attribute}>"
         ],
-        "description": "Add attribute tag for xpath"
+        "description": "Attribute for Xpath"
     },
-    "Script tag": {
+    "Group": {
+        "prefix": "<group>",
+        "body": [
+            "<group name=\"${1:name}\" string=\"${2:string}\">",
+            "\t$0",
+            "</group>"
+        ],
+        "description": "Group"
+    },
+    "Script": {
         "prefix": "<script>",
         "body": [
             "<script type=\"text/javascript\" src=\"/${1:module_name}/static/src/js/${2:filename}.js\"/>"
         ],
-        "description": "Add script tag"
+        "description": "Script"
     },
-    "Link tag": {
+    "Link": {
         "prefix": "<link>",
         "body": [
             "<link rel=\"stylesheet\" type=\"text/scss\" href=\"/${1:module_name}/static/src/scss/${2:filename}.scss\"/>"
         ],
-        "description": "Add link tag"
+        "description": "SCSS Link"
     },
-    "Assets backend": {
+    "Backend Assets": {
         "prefix": "<assetsBackend>",
         "body": [
             "<template id=\"assets_backend\" name=\"${1:Backend Assets}\" inherit_id=\"web.assets_backend\">",
@@ -542,9 +529,9 @@
             "\t</xpath>",
             "</template>"
         ],
-        "description": "Add backend assets"
+        "description": "Backend Assets"
     },
-    "Assets frontend": {
+    "Frontend Assets": {
         "prefix": "<assetsFrontend>",
         "body": [
             "<template id=\"assets_frontend\" name=\"${1:Frontend Assets}\" inherit_id=\"website.assets_frontend\">",
@@ -554,7 +541,7 @@
             "\t</xpath>",
             "</template>"
         ],
-        "description": "Add frontend assets"
+        "description": "Frontend Assets"
     },
     "t-if": {
         "prefix": "<t-if>",
@@ -563,10 +550,10 @@
             "\t$0",
             "</t>"
         ],
-        "description": "Add if condition"
+        "description": "If Condition"
     },
     "t-if-else": {
-        "prefix": "<t-if>",
+        "prefix": "<t-if-else>",
         "body": [
             "<t t-if=\"${1:condition}\">",
             "\t$0",
@@ -576,7 +563,7 @@
             "<t t-else=\"\">",
             "</t>"
         ],
-        "description": "Add if-else condition"
+        "description": "If Else Condition"
     },
     "t-foreach": {
         "prefix": "<t-foreach>",
@@ -585,62 +572,69 @@
             "\t$0",
             "</t>"
         ],
-        "description": "Add foreach loop"
+        "description": "Foreach Loop"
     },
     "t-set": {
         "prefix": "<t-set>",
         "body": [
             "<t t-set=\"${1:variable}\" t-value=\"${2:value}\"/>"
         ],
-        "description": "Add variable"
-    },
-    "t-att": {
-        "prefix": "<t-att>",
-        "body": [
-            "t-att-${1:attribute_name}=\"${0:value}\""
-        ],
-        "description": "Add attribute"
-    },
-    "t-attf": {
-        "prefix": "<t-att>",
-        "body": [
-            "t-attf-${1:attribute_name}=\"${0:value}\""
-        ],
-        "description": "Add attribute with format value"
+        "description": "Set Variable"
     },
     "t-esc": {
         "prefix": "<t-esc>",
         "body": [
             "<t t-esc=\"${0:expression}\"/>"
         ],
-        "description": "Evaluate expression"
+        "description": "Evaluate Expression"
+    },
+    "t-out": {
+        "prefix": "<t-out>",
+        "body": [
+            "<t t-out=\"${0:expression}\"/>"
+        ],
+        "description": "Evaluate Expression"
     },
     "t-raw": {
         "prefix": "<t-raw>",
         "body": [
             "<t t-raw=\"${0:variable}\"/>"
         ],
-        "description": "Evaluate html content"
+        "description": "Evaluate Html Content"
     },
     "t-call": {
         "prefix": "<t-call>",
         "body": [
             "<t t-call=\"${0:template_name}\"/>"
         ],
-        "description": "Call other template"
+        "description": "Call Other Template"
     },
     "t-debug": {
         "prefix": "<t-debug>",
         "body": [
             "<t t-debug=\"${0:pdb}\"/>"
         ],
-        "description": "Invokes a debugger"
+        "description": "Invokes a Debugger"
     },
     "t-log": {
         "prefix": "<t-log>",
         "body": [
             "<t t-log=\"${0:expression}\"/>"
         ],
-        "description": "Log the expression result"
+        "description": "Log the Expression Result"
+    },
+    "t-att": {
+        "prefix": "t-att",
+        "body": [
+            "t-att-${1:attribute_name}=\"${0:value}\""
+        ],
+        "description": "t-att"
+    },
+    "t-attf": {
+        "prefix": "t-attf",
+        "body": [
+            "t-attf-${1:attribute_name}=\"${0:value}\""
+        ],
+        "description": "t-attf"
     }
 }

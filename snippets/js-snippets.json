@@ -1,148 +1,185 @@
 {
-    "Define": {
-        "prefix": "oodefine",
-        "body": [
-            "odoo.define('${1:module_name}', function (require) {",
-            "\"use strict\";",
-            "",
-            "\t${0}",
-            "",
-            "});",
-            ""
-        ],
-        "description": "Defining a module"
+    "Odoo Module": {
+        "prefix": "odoo-module",
+        "body": ["/** @odoo-module **/"],
+        "description": "Define Odoo Module"
     },
-    "Widget": {
-        "prefix": "oowidget",
-        "body": [
-            "var ${1:MyWidget} = Widget.extend({",
-            "\ttemplate: 'MyQWebTemplate',",
-            "\tevents: {",
-            "\t\t",
-            "\t},",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\tinit: function (parent) {",
-            "\t\tthis._super.apply(this, arguments);",
-            "\t},",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\twillStart: function () {",
-            "\t\treturn this._super.apply(this, arguments);",
-            "\t},",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\tstart: function () {",
-            "\t\treturn this._super.apply(this, arguments);",
-            "\t},",
-            "});"
-        ],
-        "description": "Add widget"
+    "Import Component": {
+        "prefix": "imc",
+        "body": ["const { Component } = owl;"],
+        "description": "Import Component"
     },
-    "Call super": {
-        "prefix": "oosuper",
+    "Import Component and useState": {
+        "prefix": "imcs",
         "body": [
-            "this._super.apply(this, arguments);"
+            "const { Component } = owl;",
+            "const { useState } = owl.hooks;"
         ],
-        "description": "Add super statement"
+        "description": "Import Component and useState"
     },
-    "Rpc": {
-        "prefix": "oorpc",
+    "Component": {
+        "prefix": "oc",
         "body": [
-            "return this._rpc({",
-            "\tmodel: '${1:model_name}',",
-            "\tmethod: '${2:method_name}',",
-            "\targs: [${3}]",
-            "\tcontext: {${4}}",
-            "}).then(function (result) {",
-            "\t${0}",
-            "});"
+            "export class ${1:MyComponent} extends Component {",
+            "\t$0",
+            "}"
         ],
-        "description": "Add rpc call"
+        "description": "Component"
     },
-    "Rpc route": {
-        "prefix": "oorpc_route",
+    "Component with Constructor": {
+        "prefix": "occ",
         "body": [
-            "return this._rpc({",
-            "\troute: '${1:url}',",
-            "\tparams: {",
-            "\t\t${2:params}",
+            "export class ${1:MyComponent} extends Component {",
+            "\tconstructor(...args) {",
+            "\t\tsuper(...args);",
+            "\t\t$0",
             "\t}",
-            "}).then(function (result) {",
-            "\t${0}",
-            "});"
+            "}"
         ],
-        "description": "Add route rpc call"
+        "description": "Component with Constructor"
     },
-    "Dialog": {
-        "prefix": "oodialog",
+    "Component with Setup": {
+        "prefix": "ocs",
         "body": [
-            "var MyDialog = Dialog.extend({",
-            "\ttemplate: '${1:My.Dialog}',",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\tinit: function (parent) {",
-            "\t\tthis._super(parent, {",
-            "\t\t\ttitle: _t(\"${2:title}\"),",
-            "\t\t\tsize: '${3|large,medium,small|}',",
-            "\t\t\tbuttons: [{",
-            "\t\t\t\ttext: _t(\"Save\"),",
-            "\t\t\t\tclose: true,",
-            "\t\t\t\tclasses: 'btn-primary',",
-            "\t\t\t\tclick: function () {",
-            "\t\t\t\t\t${0}",
-            "\t\t\t\t}",
-            "\t\t\t}, {",
-            "\t\t\t\ttext: _t(\"Discard\"),",
-            "\t\t\t\tclose: true,",
-            "\t\t\t}],",
-            "\t\t});",
-            "\t},",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\twillStart: function () {",
-            "\t\treturn this._super.apply(this, arguments);",
-            "\t},",
-            "\t/**",
-            "\t * @override",
-            "\t */",
-            "\tstart: function () {",
-            "\t\treturn this._super.apply(this, arguments);",
-            "\t},",
-            "});"
+            "export class ${1:MyComponent} extends Component {",
+            "\tsetup() {",
+            "\t\tsuper.setup();",
+            "\t\t$0",
+            "\t}",
+            "}"
         ],
-        "description": "Add dialog widget"
+        "description": "Component with Setup"
     },
-    "Alert": {
-        "prefix": "ooalert",
+    "Setup": {
+        "prefix": "ms",
         "body": [
-            "Dialog.alert(this, _t(\"${1:message}\"), {",
-            "\ttitle: _t(\"${2:title}\"),",
-            "\tconfirm_callback: function () {",
-            "\t\t${0}",
-            "\t},",
-            "});"
+            "setup() {",
+            "\tsuper.setup();",
+            "\t$0",
+            "}"
         ],
-        "description": "Add alert dialog"
+        "description": "Setup"
     },
-    "Confirm": {
-        "prefix": "ooconfirm",
+    "willStart": {
+        "prefix": "mws",
         "body": [
-            "Dialog.confirm(this, _t(\"${1:message}\"), {",
-            "\ttitle: _t(\"${2:title}\"),",
-            "\tconfirm_callback: function () {",
-            "\t\t${0}",
-            "\t},",
-            "\tcancel_callback: function () {",
-            "\t\t",
-            "\t},",
+            "async willStart() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "willStart"
+    },
+    "mounted": {
+        "prefix": "mm",
+        "body": [
+            "mounted() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "mounted"
+    },
+    "willUpdateProps": {
+        "prefix": "mwup",
+        "body": [
+            "async willUpdateProps(nextProps) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "mounted"
+    },
+    "willPatch": {
+        "prefix": "mwp",
+        "body": [
+            "willPatch() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "willPatch"
+    },
+    "patched": {
+        "prefix": "mp",
+        "body": [
+            "patched() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "patched"
+    },
+    "willUnmount": {
+        "prefix": "mwum",
+        "body": [
+            "willUnmount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "willUnmount"
+    },
+    "catchError": {
+        "prefix": "mce",
+        "body": [
+            "catchError(error) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "catchError"
+    },
+    "useState": {
+        "prefix": "uss",
+        "body": ["this.state = useState({ $1: $2 });"],
+        "description": "useState"
+    },
+    "useRef": {
+        "prefix": "usr",
+        "body": ["this.ref = useRef('$1');"],
+        "description": "useRef"
+    },
+    "useContext": {
+        "prefix": "usc",
+        "body": ["this.context = useContext($1);"],
+        "description": "useContext"
+    },
+    "useStore": {
+        "prefix": "ust",
+        "body": ["this.state = useStore((state) => state);"],
+        "description": "useStore"
+    },
+    "useDispatch": {
+        "prefix": "usd",
+        "body": ["this.dispatch = useDispatch();"],
+        "description": "useDispatch"
+    },
+    "onMounted": {
+        "prefix": "onm",
+        "body": ["onMounted($1)"],
+        "description": "onMounted"
+    },
+    "onWillUnmount": {
+        "prefix": "onwum",
+        "body": ["onWillUnmount($1)"],
+        "description": "onWillUnmount"
+    },
+    "onWillPatch": {
+        "prefix": "onwp",
+        "body": ["onWillPatch($1)"],
+        "description": "onWillPatch"
+    },
+    "onPatched": {
+        "prefix": "onp",
+        "body": ["onPatched($1)"],
+        "description": "onPatched"
+    },
+    "onWillStart": {
+        "prefix": "onws",
+        "body": ["onWillStart($1)"],
+        "description": "onWillStart"
+    },
+    "onWillUpdateProps": {
+        "prefix": "onwup",
+        "body": [
+            "onWillUpdateProps(nextProps => {",
+            "\t$0",
             "});"
         ],
-        "description": "Add confirm dialog"
+        "description": "onWillUpdateProps"
     }
 }

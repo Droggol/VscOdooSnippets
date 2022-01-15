@@ -1,23 +1,23 @@
 {
-    "Access Header": {
-        "prefix": "oohdr",
+    "Columns": {
+        "prefix": "oocolumns",
         "body": [
             "id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink\n"
         ],
-        "description": "Add an ir_model_access table header"
+        "description": "Columns"
     },
-    "All group access": {
-        "prefix": "ooall",
+    "All Group Access": {
+        "prefix": "ooaccess",
         "body": [
-            "access_${10:model_technical_name}_all,access.${20:${10/[_]/./g}}.all,model_${10},,${70|1,0|},${80|1,0|},${90|1,0|},${100|1,0|}\n"
+            "access_${1:model_technical_name}_all,${2:${1/[_]/./g}}.all,model_${3:${1}},,${4|1,0|},${5|1,0|},${6|1,0|},${7|1,0|}\n"
         ],
-        "description": "Add an odoo model all group access record"
+        "description": "Access for All Groups"
     },
-    "Specify group access": {
-        "prefix": "oospec",
+    "Specific Group Access": {
+        "prefix": "ooaccess",
         "body": [
-            "access_${10:model_technical_name}_${20:group_id},access.${30:${10/[_]/./g}}.${40:${20/[_]/./g}},model_${10},${50:module_technical_name}.${20},${70|1,0|},${80|1,0|},${90|1,0|},${100|1,0|}\n"
+            "access_${1:model_technical_name}_${2:group_name},${3:${1/[_]/./g}}.${4:${2/[_]/./g}},model_${5:${1}},${6:group.name},${7|1,0|},${8|1,0|},${9|1,0|},${10|1,0|}\n"
         ],
-        "description": "Add an odoo model specify group access record"
+        "description": "Access for Specific Group"
     }
 }
