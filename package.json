@@ -2,7 +2,7 @@
     "name": "OdooSnippets",
     "displayName": "Odoo Snippets",
     "description": "Snippets for Odoo developer",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "icon": "images/icon.png",
     "publisher": "jigar-patel",
     "engines": {
@@ -23,7 +23,8 @@
         "xml",
         "javascript",
         "qweb",
-        "csv"
+        "csv",
+        "owl"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [

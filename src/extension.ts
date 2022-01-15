@@ -3,6 +3,7 @@ import * as vscode from 'vscode';
 const jsSnippetsFile = require('../snippets/js-snippets.json');
 const pythonSnippetsFile = require('../snippets/python-snippets.json');
 const xmlSnippetsFile = require('../snippets/xml-snippets.json');
+const csvSnippetsFile = require('../snippets/csv-snippets.json');
 
 type Snippet = {
     body: Array<string> | string
@@ -21,17 +22,15 @@ export async function activate(context: vscode.ExtensionContext) {
     const previousVersion = context.globalState.get('OdooSnippetsVersion');
     if (previousVersion === undefined) {
         console.log('VscOdooSnippets first-time install');
-        return;
-    }
-    if (previousVersion !== VscOdooSnippetsVersion) {
+    } else if (previousVersion !== VscOdooSnippetsVersion) {
         console.log(`VscOdooSnippets upgraded from v${previousVersion} to v${VscOdooSnippetsVersion}`);
 
         const actions = [{ title: "What's New" }, { title: 'Website' }];
         const result = await vscode.window.showInformationMessage(`VscOdooSnippets has been updated to v${VscOdooSnippetsVersion} — check out what's new!`, ...actions);
 
-        if (result != null) {
+        if (result !== null) {
             if (result === actions[0]) {
-                await vscode.env.openExternal(vscode.Uri.parse('https://github.com/Droggol/VscOdooSnippets/blob/master/CHANGELOG.md'));
+                await vscode.env.openExternal(vscode.Uri.parse(`https://marketplace.visualstudio.com/items/${extensionID}/changelog`));
             } else if (result === actions[1]) {
                 await vscode.env.openExternal(vscode.Uri.parse('https://www.droggol.com/odoo-tools'));
             }
@@ -46,13 +45,14 @@ export async function activate(context: vscode.ExtensionContext) {
             const jsSnippets = Object.entries(jsSnippetsFile as Array<Snippet>);
             const pythonSnippets = Object.entries(pythonSnippetsFile as Array<Snippet>);
             const xmlSnippets = Object.entries(xmlSnippetsFile as Array<Snippet>);
+            const csvSnippets = Object.entries(csvSnippetsFile as Array<Snippet>);
 
             const snippetsArray: Array<[string, Snippet]> = jsSnippets.concat(
-                pythonSnippets, xmlSnippets
+                pythonSnippets, xmlSnippets, csvSnippets
             );
 
             const items = snippetsArray.map(([shortDescription, { prefix, body, description }], index) => {
-                const value = typeof prefix === 'string' ? prefix : prefix[0]
+                const value = typeof prefix === 'string' ? prefix : prefix[0];
                 return {
                     id: index,
                     description: description || shortDescription,

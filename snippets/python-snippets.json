@@ -1,6 +1,6 @@
 {
     "Manifest": {
-        "prefix": "oomanifest",
+        "prefix": "manifest",
         "body": [
             "{",
             "\t'name': '${1}',",
@@ -14,40 +14,43 @@
             "\t'depends': [\n\t\t'${9}'\n\t],",
             "\t'data': [\n\t\t'${10}'\n\t],",
             "\t'demo': [\n\t\t'${11}'\n\t],",
-            "\t'auto_install': ${12|True,False|},",
-            "\t'application': ${13|True,False|},",
+            "\t'auto_install': ${12|False,True|},",
+            "\t'application': ${13|False,True|},",
+            "\t'assets': {",
+            "\t\t$0",
+            "\t}",
             "}"
         ],
-        "description": "Add manifest json"
+        "description": "Manifest JSON"
     },
     "Import": {
-        "prefix": "ooimport",
+        "prefix": "imo",
         "body": [
             "from odoo import _, api, fields, models",
             "\n"
         ],
-        "description": "Add an import"
+        "description": "Import Odoo Model/Fields/API"
     },
-    "From exceptions import": {
-        "prefix": "oofeimport",
+    "Import Odoo Exceptions": {
+        "prefix": "ime",
         "body": [
-            "from odoo.exceptions import ${100|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}"
+            "from odoo.exceptions import ${1|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}"
         ],
-        "description" : "Add an import from odoo exceptions"
+        "description" : "Import Odoo Exceptions"
     },
-    "Import logging": {
-        "prefix": "oolimport",
+    "Import Logging": {
+        "prefix": "iml",
         "body": [
             "import logging",
             "\n\n_logger = logging.getLogger(__name__)",
             "\n"
         ],
-        "description" : "Add an import from logging and create logger"
+        "description" : "Import Logging"
     },
-    "From import": {
-        "prefix": "oofimport",
+    "Import From": {
+        "prefix": "imf",
         "body": "from . import ${1:names}",
-        "description" : "Add from import"
+        "description" : "Import From"
     },
     "Model": {
         "prefix": "oomodel",
@@ -59,107 +62,114 @@
         ],
         "description": "Add model"
     },
-    "Char field": {
+    "Char Field": {
         "prefix": "oofchar",
         "body": [
-            "${1:field_name} = fields.Char(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Char('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add char field"
+        "description": "Char Field"
     },
-    "Text field": {
+    "Text Field": {
         "prefix": "ooftext",
         "body": [
-            "${1:field_name} = fields.Text(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Text('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add text field"
+        "description": "Text Field"
     },
-    "Html field": {
+    "Html Field": {
         "prefix": "oofhtml",
         "body": [
-            "${1:field_name} = fields.Html(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Html('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add html field"
+        "description": "Html Field"
     },
-    "Boolean field": {
+    "Boolean Field": {
         "prefix": "oofboolean",
         "body": [
-            "${1:field_name} = fields.Boolean(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Boolean('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add boolean field"
+        "description": "Boolean Field"
     },
-    "Integer field": {
+    "Integer Field": {
         "prefix": "oofinteger",
         "body": [
-            "${1:field_name} = fields.Integer(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Integer('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add integer field"
+        "description": "Integer Field"
     },
-    "Float field": {
+    "Float Field": {
         "prefix": "ooffloat",
         "body": [
-            "${1:field_name} = fields.Float(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}', digits=(${3:total, decimal}))${0}"
+            "${1:field_name} = fields.Float('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add float field"
+        "description": "Float Field"
     },
-    "Selection field": {
+    "Selection Field": {
         "prefix": "oofselection",
         "body": [
             "${1:field_name} = fields.Selection([",
             "\t('${2:key}', '${3:value}')",
             "], string='${4:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add selection field"
+        "description": "Selection Field"
     },
-    "Date field": {
+    "Date Field": {
         "prefix": "oofdate",
         "body": [
-            "${1:field_name} = fields.Date(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Date('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add date field"
+        "description": "Date Field"
     },
-    "Datetime field": {
+    "Datetime Field": {
         "prefix": "oofdatetime",
         "body": [
-            "${1:field_name} = fields.Datetime(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Datetime('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add datetime field"
+        "description": "Datetime Field"
     },
-    "Binary field": {
+    "Image Field": {
+        "prefix": "oofimage",
+        "body": [
+            "${1:field_name} = fields.Image('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}', max_width=${3}, max_height=${4})${0}"
+        ],
+        "description": "Image Field"
+    },
+    "Binary Field": {
         "prefix": "oofbinary",
         "body": [
-            "${1:field_name} = fields.Binary(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Binary('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add binary field"
+        "description": "Binary Field"
     },
-    "Monetary field": {
+    "Monetary Field": {
         "prefix": "oofmonetary",
         "body": [
-            "${1:field_name} = fields.Monetary(string='${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+            "${1:field_name} = fields.Monetary('${2:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add monetary field"
+        "description": "Monetary Field"
     },
-    "Many2one field": {
+    "Many2one Field": {
         "prefix": "oofmany2one",
         "body": [
             "${1:field_name}_id = fields.Many2one('${2:comodel_name}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add many2one field"
+        "description": "Many2one Field"
     },
-    "One2many field": {
+    "One2many Field": {
         "prefix": "oofone2many",
         "body": [
             "${1:field_name}_ids = fields.One2many('${2:comodel_name}', '${3:inverse_field_name}', string='${4:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add one2many field"
+        "description": "One2many Field"
     },
-    "Many2many field": {
+    "Many2many Field": {
         "prefix": "oofmany2many",
         "body": [
             "${1:field_name}_ids = fields.Many2many('${2:comodel_name}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
         ],
-        "description": "Add many2many field"
+        "description": "Many2many Field"
     },
-    "Compute field": {
+    "Compute Field": {
         "prefix": "oofcompute",
         "body": [
             "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary,Monetary|}(compute='_compute_${1}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')",
@@ -168,9 +178,9 @@
             "def _compute_${1}(self):",
             "\tpass"
         ],
-        "description": "Add compute field"
+        "description": "Compute Field"
     },
-    "Compute field with inverse": {
+    "Compute Field with Inverse": {
         "prefix": "oofcomputei",
         "body": [
             "${1:field_name} = fields.${2|Char,Text,Html,Boolean,Integer,Float,Date,Datetime,Binary|}(compute='_compute_${1}', inverse='_inverse_${1}', string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')",
@@ -181,16 +191,25 @@
             "def _inverse_${1}(self):",
             "\tpass"
         ],
-        "description": "Add compute field with inverse method"
+        "description": "Compute Field with Inverse"
     },
-    "Onchange field": {
+    "Onchange Field": {
         "prefix": "oofonchange",
         "body": [
             "@api.onchange('${1}')",
             "def _onchange_${1}(self):",
             "\t${0:pass}"
         ],
-        "description": "Add onchange field"
+        "description": "Onchange Field"
+    },
+    "Field Constrains": {
+        "prefix": "oofconstrains",
+        "body": [
+            "@api.constrains('${1:fieldname}')",
+            "def _constrains_${1}(self):",
+            "\t${0:pass}"
+        ],
+        "description": "Field Constrains"
     },
     "SQL Constraints": {
         "prefix": "oofconstrains",
@@ -199,57 +218,104 @@
             "\t(\"${1:field_name}_${2|check,unique|}\", \"${2}(${1})\", \"${3:Error message}\"),",
             "]"
         ],
-        "description": "Add SQL constraints to check or unique field"
+        "description": "SQL Constraints"
     },
-    "Python Constrains": {
-        "prefix": "oofconstrains",
-        "body": [
-            "@api.constrains('${1:fieldname}')",
-            "def _constrains_${1}(self):",
-            "\t${0:pass}"
-        ],
-        "description": "Add a python constrains"
-    },
-    "Ensure one record": {
+    "Ensure One": {
         "prefix": "ooone",
         "body": [
             "self.ensure_one()"
         ],
-        "description": "Ensure one record passing to this method"
+        "description": "Ensure One"
     },
-    "Override hook method": {
-        "prefix": "oosuper",
+    "override": {
+        "prefix": "oooverride",
         "body": [
             "def ${1:method_name}(self, ${2:vals}):",
             "\tres = super().${1:method_name}(${2:vals})",
             "\t${0}",
             "\treturn res"
         ],
-        "description": "Add an override hook method"
+        "description": "Override Method"
     },
-    "Create method": {
+    "create": {
         "prefix": "oocreate",
         "body": [
             "@api.model_create_multi",
             "def create(self, ${2:vals}):",
             "\treturn super().create(${2:vals})"
         ],
-        "description": "Add create method"
+        "description": "Create Method"
     },
-    "Write method": {
+    "write": {
         "prefix": "oowrite",
         "body": [
             "def write(self, vals):",
             "\treturn super().write(vals)"
         ],
-        "description": "Add write method"
+        "description": "Write Method"
     },
-    "Unlink method": {
+    "unlink": {
         "prefix": "oounlink",
         "body": [
             "def unlink(self):",
             "\treturn super().unlink()"
         ],
-        "description": "Add unlink method"
+        "description": "Unlink Method"
+    },
+    "related": {
+        "prefix": "related",
+        "body": [
+            "related='${1:field_name}'"
+        ],
+        "description": "Related Attribute"
+    },
+    "required": {
+        "prefix": "required",
+        "body": [
+            "required=${1|True,False|}"
+        ],
+        "description": "Required Attribute"
+    },
+    "readonly": {
+        "prefix": "readonly",
+        "body": [
+            "readonly=${1|True,False|}"
+        ],
+        "description": "Readonly Attribute"
+    },
+    "copy": {
+        "prefix": "copy",
+        "body": [
+            "copy=${1|True,False|}"
+        ],
+        "description": "Copy Attribute"
+    },
+    "store": {
+        "prefix": "store",
+        "body": [
+            "store=${1|True,False|}"
+        ],
+        "description": "Store Attribute"
+    },
+    "digits": {
+        "prefix": "digits",
+        "body": [
+            "digits='${1}'"
+        ],
+        "description": "Digits Attribute"
+    },
+    "help": {
+        "prefix": "help",
+        "body": [
+            "help='${1}'"
+        ],
+        "description": "Help Attribute"
+    },
+    "check_company": {
+        "prefix": "check_company",
+        "body": [
+            "check_company=True"
+        ],
+        "description": "Check Company Attribute"
     }
 }

@@ -25,7 +25,7 @@ This extension contains predefined code snippets for [Odoo](https://www.odoo.com
 * XML (`.xml`)
 * CSV (`.csv`)
 
-All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/13.0/reference/guidelines.html).
+All snippets follow the [Odoo Guidelines](https://www.odoo.com/documentation/15.0/reference/guidelines.html).
 
 ## Installation
 
@@ -33,7 +33,9 @@ Launch VS Code. Press `Ctrl+P` or `Command+P` (for Mac). Paste command `ext inst
 
 ## How to use?
 
-Most snippets prefixed with `oo`. For example if you want to add `create` CRUD method then type `oocreate`.
+Snippets prefixes are defined in documentation. Type prefix and select snippet from the suggestion list.
+
+For example if you want to add `create` CRUD method then type `oocreate`.
 
 <img src="https://raw.githubusercontent.com/droggol/VscOdooSnippets/master/images/demo.gif" width="624" height="544"/>
 
@@ -45,126 +47,320 @@ You can search snippets with `Odoo Snippet Search` command which can be run by p
 
 #### Python (`.py`)
 
-##### Prefixed with `oo`
 Prefix | Purpose
 ------------ | -------------
-manifest | Add manifest json
-import | Add an import
-feimport | Add an import from odoo exceptions
-limport | Add an import from logging and create logger
-fimport | Add an import from
-model | Add model
-fchar | Add char field
-ftext | Add text field
-fhtml | Add html field
-fboolean | Add boolean field
-finteger | Add integer field
-ffloat | Add float field
-fselection | Add selection field
-fdate | Add date field
-fdatetime | Add dateTime field
-fbinary | Add binary field
-fmonetary | Add monetary field
-fmany2one | Add many2one field
-fone2many | Add one2many field
-fmany2many | Add many2many field
-fcompute | Add compute field
-fcomputei | Add compute field with inverse method
-fonchange | Add onchange field
-fconstrains | Add constrains on field (SQL/ORM)
-super | Add an override hook method
-one | Ensure one record
-create | Add create method
-write | Add write method
-unlink | Add unlink method
-
-#### Javascript (`.js`)
-
-##### Prefixed with `oo`
-Prefix | Purpose
------------- | -------------
-define | Defining a module
-widget | Add widget
-super | Add super statement
-rpc | Add rpc call
-rpc_route | Add route rpc call
-dialog | Add dialog widget
-alert | Add alert dialog
-confirm | Add confirm dialog
+`manifest` | Manifest JSON
+`imo` | Import Odoo Model/Fields/API
+`ime` | Import Odoo Exceptions
+`iml` | Import Logging
+`imf` | Import From
+`oomodel` | Add model
+`oofchar` | Char Field
+`ooftext` | Text Field
+`oofhtml` | Html Field
+`oofboolean` | Boolean Field
+`oofinteger` | Integer Field
+`ooffloat` | Float Field
+`oofselection` | Selection Field
+`oofdate` | Date Field
+`oofdatetime` | DateTime Field
+`oofimage` | Image Field
+`oofbinary` | Binary Field
+`oofmonetary` | Monetary Field
+`oofmany2one` | Many2one Field
+`oofone2many` | One2many Field
+`oofmany2many` | Many2many Field
+`oofcompute` | Compute Field
+`oofcomputei` | Compute Field with Inverse
+`oofonchange` | Onchange Field
+`oofconstrains` | Constrains
+`ooone` | Ensure One
+`oooverride` | Override Method
+`oocreate` | Create Method
+`oowrite` | Write Method
+`oounlink` | Unlink Method
+`related` | Related Attribute
+`required` | Required Attribute
+`readonly` | Readonly Attribute
+`copy` | Copy Attribute
+`store` | Store Attribute
+`digits` | Digits Attribute
+`help` | Help Attribute
+`check_company` | Check Company Attribute
 
 #### XML (`.xml`)
 
 Prefix | Purpose
 ------------ | -------------
-`<odoo>` | Add Odoo namespace
-`<data>` | Add data tag
-`<menuitem>` | Add root menu
-`<menuitem>` | Add sub menu
-`<form>` | Add form view
-`<list>` | Add list view
-`<kanban>` | Add kanban view
-`<search>` | Add search view
-`<calendar>` | Add calendar view
-`<cohort>` | Add cohort view
-`<gantt>` | Add gantt view
-`<graph>` | Add graph view
-`<pivot>` | Add pivot view
-`<activity>` | Add activity view
-`<qweb>` | Add qweb view
-`<viewInherit>` | Add inherited view
-`<buttonHeader>` | Add button in form view header
-`<buttonBox>` | Add stat button container in form view
-`<buttonStat>` | Add stat button in form view
-`<field>` | Add field tag
-`<filter>` | Add a filter to a search view
-`<notebook>` | Add a notebook
-`<page>` | Add a notebook page
-`<chatter>` | Add chatter
-`<action>` | Add an action
-`<actionView>` | Add view in action
-`<actionServer>` | Add server action
-`<actionUrl>` | Add URL action
-`<actionClient>` | Add client action
-`<actionReport>` | Add report action
-`<report>` | Add report template
-`<cron>` | Add cron job
-`<record>` | Add record
-`<function>` | Add function
-`<template>` | Add template
-`<templateInherit>` | Add inherited template
-`<group>` | Add a group tag
-`<xpath>` | Add xpath
-`<xpathAttr>` | Add xpath to attributes
-`<attribute>` | Add attribute tag for xpath
-`<script>` | Add script tag
-`<link>` | Add link tag
-`<assetsBackend>` | Add backend assets
-`<assetsFrontend>` | Add frontend assets
+`<odoo>` | Odoo Namespace
+`<data>` | Data Tag
+`<menuitem>` | Root Menu
+`<menuitem>` | Submenu
+`<form>` | Form View
+`<tree>` | Tree View
+`<kanban>` | Kanban View
+`<search>` | Search View
+`<calendar>` | Calendar View
+`<cohort>` | Cohort View
+`<gantt>` | Gantt View
+`<graph>` | Graph View
+`<pivot>` | Pivot View
+`<activity>` | Activity View
+`<qweb>` | Qweb View
+`<viewInherit>` | Inherit View
+`<buttonHeader>` | Button in Form View Header
+`<buttonBox>` | Stat Button Container
+`<buttonStat>` | Stat Button
+`<field>` | Field Tag
+`<filter>` | Filter in Search View
+`<notebook>` | Notebook
+`<page>` | Notebook Page
+`<chatter>` | Chatter
+`<action>` | Action
+`<actionView>` | View in Action
+`<actionServer>` | Server Action
+`<actionUrl>` | URL action
+`<actionClient>` | Client Action
+`<actionReport>` | Report Action
+`<report>` | Report Template
+`<cron>` | Cron
+`<record>` | Record
+`<function>` | Function
+`<template>` | Template
+`<templateInherit>` | Inherit Template
+`<xpath>` | Xpath
+`<xpathAttr>` | Xpath to Attributes
+`<xpathField>` | Xpath for Field
+`<attribute>` | Attribute for Xpath
+`<group>` | Group
+`<script>` | Script
+`<link>` | SCSS Link
+`<assetsBackend>` | Backend Assets
+`<assetsFrontend>` | Frontend Assets
 
 #### Qweb
 
 Prefix | Purpose
 ------------ | -------------
-`<t-if>` | Add if condition
-`<t-if-else>` | Add if-else condition
-`<t-foreach>` | Add foreach loop
-`<t-set>` | Add variable
-`<t-att>` | Add attribute
-`<t-attf>` | Add attribute with format value
-`<t-esc>` | Evaluate expression
-`<t-raw>` | Evaluate html content
-`<t-call>` | Call other template
-`<t-debug>` | Invokes a debugger
-`<t-log>` | Log the expression result
+`<t-if>` | If Condition
+`<t-if-else>` | If Else Condition
+`<t-foreach>` | Foreach Loop
+`<t-set>` | Set Variable
+`<t-esc>` | Evaluate Expression
+`<t-out>` | Evaluate Expression
+`<t-raw>` | Evaluate Html Content
+`<t-call>` | Call Other Template
+`<t-debug>` | Invokes a Debugger
+`<t-log>` | Log the Expression Result
+`t-att` | t-att
+`t-attf` | t-attf
+
+#### Python and XML (`.py` and `.xml`)
+
+Prefix | Purpose
+------------ | -------------
+`ooleaf` | Domain Leaf
 
 #### CSV (`.csv`)
 
-##### Prefixed with `oo`
 Prefix | Purpose
 ------------ | -------------
-hdr | Add a header line for odoo model access file
-all | Add an all group access record
-spec | Add a specify group access record
+`oocolumns` | Columns
+`ooaccess` | Access for Model
+
+#### Javascript (`.js`)
+
+Prefix | Purpose
+------------ | -------------
+`odoo-module` | Define Odoo Module
+`imc` | Import Component
+`imcs` | Import Component and useState
+`oc` | Component
+`occ` | Component with Constructor
+`ocs` | Component with Setup
+`ms` | Setup
+`mws` | willStart
+`mm` | mounted
+`mwup` | willUpdateProps
+`mwp` | willPatch
+`mp` | patched
+`mwum` | willUnmount
+`mce` | catchError
+`uss` | useState
+`usr` | useRef
+`usc` | useContext
+`ust` | useStore
+`usd` | useDispatch
+`onm` | onMounted
+`onwn` | onWillUnmount
+`onwp` | onWillPatch
+`onp` | onPatched
+`ows` | onWillStart
+`owup` | onWillUpdateProps
+
+## Full Expansions
+
+#### `odoo-module` - Define Odoo Module
+
+```javascript
+/** @odoo-module **/
+```
+
+#### `imc` - Import Component
+
+```javascript
+const { Component } = owl;
+```
+
+#### `imcs` - Import Component and useState
+
+```javascript
+const { Component } = owl;
+const { useState } = owl.hooks;
+```
+
+#### `oc` - Component
+
+```javascript
+export class MyComponent extends Component { }
+```
+
+#### `occ` - Component with Constructor
+
+```javascript
+export class MyComponent extends Component {
+    constructor(...args) {
+        super(...args);
+    }
+}
+```
+
+#### `ocs` - Component with Setup
+
+```javascript
+export class MyComponent extends Component {
+    setup() {
+        super.setup();
+    }
+}
+```
+
+#### `ms` - Setup
+
+```javascript
+setup() {
+    super.setup();
+}
+```
+
+#### `mws` - willStart
+
+```javascript
+async willStart() { }
+```
+
+#### `mm` - mounted
+
+```javascript
+mounted() { }
+```
+
+#### `mwup` - willUpdateProps
+
+```javascript
+async willUpdateProps(nextProps) { }
+```
+
+#### `mwp` - willPatch
+
+```javascript
+willPatch() { }
+```
+
+#### `mp` - patched
+
+```javascript
+patched() { }
+```
+
+#### `mwum` - willUnmount
+
+```javascript
+willUnmount() { }
+```
+
+#### `mce` - catchError
+
+```javascript
+catchError(error) { }
+```
+
+#### `uss` - useState
+
+```javascript
+this.state = useState({});
+```
+
+#### `usr` - useRef
+
+```javascript
+this.ref = useRef('');
+```
+
+#### `usc` - useContext
+
+```javascript
+this.context = useContext();
+```
+
+#### `ust` - useStore
+
+```javascript
+this.state = useStore((state) => state);
+```
+
+#### `usd` - useDispatch
+
+```javascript
+this.dispatch = useDispatch();
+```
+
+#### `onm` - onMounted
+
+```javascript
+onMounted();
+```
+
+#### `onwu` - onWillUnmount
+
+```javascript
+onWillUnmount();
+```
+
+#### `onwp` - onWillPatch
+
+```javascript
+onWillPatch();
+```
+
+#### `onp` - onPatched
+
+```javascript
+onPatched();
+```
+
+#### `onws` - onWillStart
+
+```javascript
+onWillStart();
+```
+
+#### `onwup` - onWillUpdateProps
+
+```javascript
+onWillUpdateProps(nextProps => { });
+```
+
 
 ## Contributing
 If you'd like to report an issue or help contribute to this visual studio code extension, please visit the repository on Github.

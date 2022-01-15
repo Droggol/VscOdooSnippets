@@ -1,10 +1,10 @@
 {
-    "Domain leaf": {
+    "Domain Leaf": {
         "scope": "python,xml",
         "prefix": "ooleaf",
         "body": [
-            "('${10:field_name}', '${20|=,!=,<=,<,>,>=,=?,=like,=ilike,like,not like,ilike,not ilike,in,not in,child_of,parent_of,inselect,not inselect|}', ${30:value})"
+            "('${1:field_name}', '${2|=,!=,<=,<,>,>=,=?,=like,=ilike,like,not like,ilike,not ilike,in,not in,child_of,parent_of,inselect,not inselect|}', ${3:value})"
         ],
-        "description": "Domain leaf triplet"
+        "description": "Domain Leaf"
     }
 }
