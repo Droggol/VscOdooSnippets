@@ -483,7 +483,7 @@
     "Xpath Field": {
         "prefix": "<xpathField>",
         "body": [
-            "<field position=\"${1|after,before,replace,move,attributes|}\">",
+            "<field name=\"${1:name}\" position=\"${2|after,before,replace,move,attributes|}\">",
             "\t$0",
             "</field>"
         ],
@@ -492,7 +492,7 @@
     "Attribute": {
         "prefix": "<attribute>",
         "body": [
-            "<attribute name=\"${20}\" ${30:separator=\"${35}\" }${40:add=\"${45}\" }${50:remove=\"${55}\" }${63:value=\"${60}\"}${66:>${60}</attribute}>"
+            "<attribute name=\"${1}\" ${2:separator=\"${3}\" }${4:add=\"${5}\" }${6:remove=\"${7}\" }${8:value=\"${9}\"}>${0}</attribute>"
         ],
         "description": "Attribute for Xpath"
     },
