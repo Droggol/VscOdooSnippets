@@ -242,7 +242,7 @@
         "body": [
             "@api.model",
             "def default_get(self, default_fields):",
-            "\tresult=supper().default_get(default_fields)",
+            "\tresult=super().default_get(default_fields)",
             "\treturn result"
         ],
         "description": "Default_get method"
