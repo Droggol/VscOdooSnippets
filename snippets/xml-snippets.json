@@ -242,6 +242,13 @@
         ],
         "description": "Button in Form View Header"
     },
+    "Header status bar": {
+        "prefix": "<statusbar>",
+        "body": [
+            "<field name=\"state\" widget=\"statusbar\"/>"
+        ],
+        "description": "Status bar in Form View Header"
+    },
     "Button Box": {
         "prefix": "<buttonBox>",
         "body": [
