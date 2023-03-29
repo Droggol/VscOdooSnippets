@@ -50,7 +50,7 @@
         ],
         "description": "Component with Setup"
     },
-    "Setup": {
+    "fn Setup": {
         "prefix": "ms",
         "body": [
             "setup() {",
@@ -60,7 +60,7 @@
         ],
         "description": "Setup"
     },
-    "willStart": {
+    "fn willStart": {
         "prefix": "mws",
         "body": [
             "async willStart() {",
@@ -69,7 +69,7 @@
         ],
         "description": "willStart"
     },
-    "mounted": {
+    "fn mounted": {
         "prefix": "mm",
         "body": [
             "mounted() {",
@@ -78,7 +78,7 @@
         ],
         "description": "mounted"
     },
-    "willUpdateProps": {
+    "fn willUpdateProps": {
         "prefix": "mwup",
         "body": [
             "async willUpdateProps(nextProps) {",
@@ -87,7 +87,7 @@
         ],
         "description": "mounted"
     },
-    "willPatch": {
+    "fn willPatch": {
         "prefix": "mwp",
         "body": [
             "willPatch() {",
@@ -96,7 +96,7 @@
         ],
         "description": "willPatch"
     },
-    "patched": {
+    "fn patched": {
         "prefix": "mp",
         "body": [
             "patched() {",
@@ -105,7 +105,7 @@
         ],
         "description": "patched"
     },
-    "willUnmount": {
+    "fn willUnmount": {
         "prefix": "mwum",
         "body": [
             "willUnmount() {",
@@ -114,7 +114,7 @@
         ],
         "description": "willUnmount"
     },
-    "catchError": {
+    "fn catchError": {
         "prefix": "mce",
         "body": [
             "catchError(error) {",

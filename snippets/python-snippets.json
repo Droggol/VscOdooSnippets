@@ -55,9 +55,9 @@
     "Model": {
         "prefix": "oomodel",
         "body": [
-            "class ${30:${20/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${40|Model,AbstractModel,TransientModel|}):",
-            "\t${10|_name,_inherit|} = '${20:model.technical.name}'",
-            "\t_description = '${50:${20/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
+            "class ${40:${30/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${10|Model,AbstractModel,TransientModel|}):",
+            "\t${20|_name,_inherit|} = '${30:model.technical.name}'",
+            "\t_description = '${50:${30/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
             "\t"
         ],
         "description": "Add model"
