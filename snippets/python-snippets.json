@@ -58,7 +58,8 @@
             "class ${40:${30/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${10|Model,AbstractModel,TransientModel|}):",
             "\t${20|_name,_inherit|} = '${30:model.technical.name}'",
             "\t_description = '${50:${30/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
-            "\t"
+            "\t",
+            "\t$0"
         ],
         "description": "Add model"
     },
@@ -155,6 +156,13 @@
         ],
         "description": "Many2one Field"
     },
+    "Reference Field": {
+        "prefix": "oofreference",
+        "body": [
+            "${1:field_name}_id = fields.Reference(selection=, string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+        ],
+        "description": "Many2one Field"
+    },
     "One2many Field": {
         "prefix": "oofone2many",
         "body": [
@@ -193,7 +201,7 @@
         ],
         "description": "Compute Field with Inverse"
     },
-    "Onchange Field": {
+    "Method Onchange Field": {
         "prefix": "oofonchange",
         "body": [
             "@api.onchange('${1}')",
@@ -202,7 +210,7 @@
         ],
         "description": "Onchange Field"
     },
-    "Field Constrains": {
+    "Method Constrains": {
         "prefix": "oofconstrains",
         "body": [
             "@api.constrains('${1:fieldname}')",
@@ -227,7 +235,7 @@
         ],
         "description": "Ensure One"
     },
-    "override": {
+    "override Method": {
         "prefix": "oooverride",
         "body": [
             "def ${1:method_name}(self, ${2:vals}):",
@@ -237,7 +245,7 @@
         ],
         "description": "Override Method"
     },
-    "default_get": {
+    "Method default_get": {
         "prefix": "oodefault",
         "body": [
             "@api.model",
@@ -247,7 +255,7 @@
         ],
         "description": "Default_get method"
     },
-    "create": {
+    "Method create": {
         "prefix": "oocreate",
         "body": [
             "@api.model_create_multi",
@@ -256,7 +264,7 @@
         ],
         "description": "Create Method"
     },
-    "write": {
+    "Method write": {
         "prefix": "oowrite",
         "body": [
             "def write(self, vals):",
@@ -264,7 +272,7 @@
         ],
         "description": "Write Method"
     },
-    "unlink": {
+    "Method unlink": {
         "prefix": "oounlink",
         "body": [
             "def unlink(self):",
@@ -272,56 +280,56 @@
         ],
         "description": "Unlink Method"
     },
-    "related": {
+    "Field attr related": {
         "prefix": "related",
         "body": [
             "related='${1:field_name}'"
         ],
         "description": "Related Attribute"
     },
-    "required": {
+    "Field attr required": {
         "prefix": "required",
         "body": [
             "required=${1|True,False|}"
         ],
         "description": "Required Attribute"
     },
-    "readonly": {
+    "Field attr readonly": {
         "prefix": "readonly",
         "body": [
             "readonly=${1|True,False|}"
         ],
         "description": "Readonly Attribute"
     },
-    "copy": {
+    "Field attr copy": {
         "prefix": "copy",
         "body": [
             "copy=${1|True,False|}"
         ],
         "description": "Copy Attribute"
     },
-    "store": {
+    "Field attr store": {
         "prefix": "store",
         "body": [
             "store=${1|True,False|}"
         ],
         "description": "Store Attribute"
     },
-    "digits": {
+    "Field attr digits": {
         "prefix": "digits",
         "body": [
             "digits='${1}'"
         ],
         "description": "Digits Attribute"
     },
-    "help": {
+    "Field attr help": {
         "prefix": "help",
         "body": [
             "help='${1}'"
         ],
         "description": "Help Attribute"
     },
-    "check_company": {
+    "Field attr check_company": {
         "prefix": "check_company",
         "body": [
             "check_company=True"
