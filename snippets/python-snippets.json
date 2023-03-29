@@ -23,7 +23,7 @@
         ],
         "description": "Manifest JSON"
     },
-    "Import": {
+    "Import Odoo": {
         "prefix": "imo",
         "body": [
             "from odoo import _, api, fields, models",
@@ -55,9 +55,9 @@
     "Model": {
         "prefix": "oomodel",
         "body": [
-            "class ${40:${30/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${10|Model,AbstractModel,TransientModel|}):",
-            "\t${20|_name,_inherit|} = '${30:model.technical.name}'",
-            "\t_description = '${50:${30/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
+            "class ${40:${10/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${30|Model,AbstractModel,TransientModel|}):",
+            "\t${20|_name,_inherit|} = '${10:model.technical.name}'",
+            "\t_description = '${50:${10/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
             "\t",
             "\t$0"
         ],
@@ -279,6 +279,20 @@
             "\treturn super().unlink()"
         ],
         "description": "Unlink Method"
+    },
+    "Model attr _inherits": {
+        "prefix": "_inherits",
+        "body": [
+            "_inherits = { \n\t'${1:model.technical.name}': '${2:${1/\\./_/g}}_id', \n}"
+        ],
+        "description": "_inherits Attribute"
+    },
+    "Model attr _inherit": {
+        "prefix": "_inherit",
+        "body": [
+            "_inherit = ['${0}', ]"
+        ],
+        "description": "_inherit Attribute"
     },
     "Field attr related": {
         "prefix": "related",
