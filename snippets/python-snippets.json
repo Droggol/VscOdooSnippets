@@ -23,7 +23,7 @@
         ],
         "description": "Manifest JSON"
     },
-    "Import": {
+    "Import Odoo": {
         "prefix": "imo",
         "body": [
             "from odoo import _, api, fields, models",
@@ -55,10 +55,11 @@
     "Model": {
         "prefix": "oomodel",
         "body": [
-            "class ${30:${20/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${40|Model,AbstractModel,TransientModel|}):",
-            "\t${10|_name,_inherit|} = '${20:model.technical.name}'",
-            "\t_description = '${50:${20/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
-            "\t"
+            "class ${40:${10/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${30|Model,AbstractModel,TransientModel|}):",
+            "\t${20|_name,_inherit|} = '${10:model.technical.name}'",
+            "\t_description = '${50:${10/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
+            "\t",
+            "\t$0"
         ],
         "description": "Add model"
     },
@@ -155,6 +156,13 @@
         ],
         "description": "Many2one Field"
     },
+    "Reference Field": {
+        "prefix": "oofreference",
+        "body": [
+            "${1:field_name}_id = fields.Reference(selection=, string='${3:${1/(.*?)_([a-zA-Z])/${1:/capitalize} ${2:/capitalize}/g}}')${0}"
+        ],
+        "description": "Many2one Field"
+    },
     "One2many Field": {
         "prefix": "oofone2many",
         "body": [
@@ -193,7 +201,7 @@
         ],
         "description": "Compute Field with Inverse"
     },
-    "Onchange Field": {
+    "Method Onchange Field": {
         "prefix": "oofonchange",
         "body": [
             "@api.onchange('${1}')",
@@ -202,7 +210,7 @@
         ],
         "description": "Onchange Field"
     },
-    "Field Constrains": {
+    "Method Constrains": {
         "prefix": "oofconstrains",
         "body": [
             "@api.constrains('${1:fieldname}')",
@@ -227,7 +235,7 @@
         ],
         "description": "Ensure One"
     },
-    "override": {
+    "override Method": {
         "prefix": "oooverride",
         "body": [
             "def ${1:method_name}(self, ${2:vals}):",
@@ -237,7 +245,17 @@
         ],
         "description": "Override Method"
     },
-    "create": {
+    "Method default_get": {
+        "prefix": "oodefault",
+        "body": [
+            "@api.model",
+            "def default_get(self, default_fields):",
+            "\tresult=super().default_get(default_fields)",
+            "\treturn result"
+        ],
+        "description": "Default_get method"
+    },
+    "Method create": {
         "prefix": "oocreate",
         "body": [
             "@api.model_create_multi",
@@ -246,7 +264,7 @@
         ],
         "description": "Create Method"
     },
-    "write": {
+    "Method write": {
         "prefix": "oowrite",
         "body": [
             "def write(self, vals):",
@@ -254,7 +272,7 @@
         ],
         "description": "Write Method"
     },
-    "unlink": {
+    "Method unlink": {
         "prefix": "oounlink",
         "body": [
             "def unlink(self):",
@@ -262,56 +280,70 @@
         ],
         "description": "Unlink Method"
     },
-    "related": {
+    "Model attr _inherits": {
+        "prefix": "_inherits",
+        "body": [
+            "_inherits = { \n\t'${1:model.technical.name}': '${2:${1/\\./_/g}}_id', \n}"
+        ],
+        "description": "_inherits Attribute"
+    },
+    "Model attr _inherit": {
+        "prefix": "_inherit",
+        "body": [
+            "_inherit = ['${0}', ]"
+        ],
+        "description": "_inherit Attribute"
+    },
+    "Field attr related": {
         "prefix": "related",
         "body": [
             "related='${1:field_name}'"
         ],
         "description": "Related Attribute"
     },
-    "required": {
+    "Field attr required": {
         "prefix": "required",
         "body": [
             "required=${1|True,False|}"
         ],
         "description": "Required Attribute"
     },
-    "readonly": {
+    "Field attr readonly": {
         "prefix": "readonly",
         "body": [
             "readonly=${1|True,False|}"
         ],
         "description": "Readonly Attribute"
     },
-    "copy": {
+    "Field attr copy": {
         "prefix": "copy",
         "body": [
             "copy=${1|True,False|}"
         ],
         "description": "Copy Attribute"
     },
-    "store": {
+    "Field attr store": {
         "prefix": "store",
         "body": [
             "store=${1|True,False|}"
         ],
         "description": "Store Attribute"
     },
-    "digits": {
+    "Field attr digits": {
         "prefix": "digits",
         "body": [
             "digits='${1}'"
         ],
         "description": "Digits Attribute"
     },
-    "help": {
+    "Field attr help": {
         "prefix": "help",
         "body": [
             "help='${1}'"
         ],
         "description": "Help Attribute"
     },
-    "check_company": {
+    "Field attr check_company": {
         "prefix": "check_company",
         "body": [
             "check_company=True"

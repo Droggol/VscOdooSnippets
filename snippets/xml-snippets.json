@@ -224,10 +224,10 @@
     "Inherit View": {
         "prefix": "<viewInherit>",
         "body": [
-            "<record id=\"${1:inherit_view_id}_inherit_${2:module_name}\" model=\"ir.ui.view\">",
+            "<record id=\"view_${1:inherit_view_id}_inherit_${2:module_name}\" model=\"ir.ui.view\">",
             "\t<field name=\"name\">${3:model.name}.view.${4|form,list,kanban,search,calendar,cohort,gantt,graph,pivot,activity,qweb|}.inherit</field>",
             "\t<field name=\"model\">${3:model.name}</field>",
-            "\t<field name=\"inherit_id\" ref=\"${5:inherit_module_name}.${1:inherit_view_id}\"/>",
+            "\t<field name=\"inherit_id\" ref=\"${2:module_name}.${1:inherit_view_id}\"/>",
             "\t<field name=\"arch\" type=\"xml\">",
             "\t\t${0}",
             "\t</field>",
@@ -241,6 +241,13 @@
             "<button string=\"${1}\" name=\"${2:action_name}\" type=\"${3|object,action|}\" class=\"oe_highlight\"/>"
         ],
         "description": "Button in Form View Header"
+    },
+    "Header status bar": {
+        "prefix": "<statusbar>",
+        "body": [
+            "<field name=\"state\" widget=\"statusbar\"/>"
+        ],
+        "description": "Status bar in Form View Header"
     },
     "Button Box": {
         "prefix": "<buttonBox>",
@@ -483,7 +490,7 @@
     "Xpath Field": {
         "prefix": "<xpathField>",
         "body": [
-            "<field position=\"${1|after,before,replace,move,attributes|}\">",
+            "<field name=\"${1}\" position=\"${2|after,before,replace,move,attributes|}\">",
             "\t$0",
             "</field>"
         ],
